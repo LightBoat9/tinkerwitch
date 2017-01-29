@@ -9,6 +9,13 @@ vsp = 0;
 grav = 1;
 movespeed = 2;
 
+//Rolling
+rollspeed = 15;
+rolling = false;
+
+//Stun
+stunned = false;
+
 //Damage Box
 dmgBoxInst = instance_create_depth(x,y,global.depth_2,obj_snail_dmgBox)
 createDmgBox = false;

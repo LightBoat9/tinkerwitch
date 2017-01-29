@@ -6,6 +6,13 @@ if !instance_exists(obj_snail_dmgBox) {
 	}
 }
 
+//Start rolling
+if stunned = false {
+	if distance_to_object(obj_player) < (32 * 5) {
+		rolling = true;
+	}
+}
+
 /* Direction */
 //Switch Direction At Walls
 if place_meeting(x+hsp,y,obj_solid) {
@@ -18,14 +25,40 @@ if place_meeting(x+hsp,y,obj_solid) {
 			break;
 	}
 }
+
 //Change horizontal speed based on direction
-switch (dir) {
-	case 0:
-		hsp = -5;
-		break;
-	case 1:
-		hsp = 5;
-		break;
+if stunned = false {
+	switch (dir) {
+		case 0:
+			if rolling = false {
+				hsp = -movespeed;
+			}
+			else if rolling = true {
+				hsp = -rollspeed;
+			}
+			break;
+		case 1:
+			if rolling = false {
+				hsp = movespeed;
+			}
+			else if rolling = true {
+				hsp = rollspeed;
+			}
+			break;
+	}
 }
 
+//Stunned
+if stunned = true {
+	if hsp != 0 {
+		if hsp > 0 {
+			hsp -= .5;
+		}
+		if hsp < 0 {
+			hsp += .5;
+		}
+	} else {
+		stunned = false;
+	}
+}
 scr_snail_movement();
