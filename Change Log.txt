@@ -1,0 +1,36 @@
+# Change Log
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
+
+Game Version Based On
+[Major build number][Minor build number][Revision][Package](http://gamedev.stackexchange.com/questions/48325/best-practices-for-labeling-game-versions)
+
+Major build number: This indicates a major milestone in the game, increment this when going from beta to release, from release to major updates.
+Minor build number: Used for feature updates, large bug fixes etc.
+Revision: Minor alterations on existing features, small bug fixes, etc.
+Package: Your code stays the same, external library changes or asset file update.
+
+
+## [Unreleased]
+### Added
+- Player sprite & object
+- Solid sprite & object
+- Player movement & collisions
+- Wrench sprite & throw mechanics
+- View Options
+- User Inputs
+- Castle Tile Set
+- Bots sprite and float mechanics
+- Missile and missle creation mechanics
+- Missile collision, explosion, and particles
+- Melee attack animation
+- Melee attack hitbox
+- Snail enemy
+
+
+### Changed
+
+### Fixed
+
+
+## [0.0.0.0] - 2017-01-24
