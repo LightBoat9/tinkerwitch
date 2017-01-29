@@ -1,0 +1,15 @@
+{
+    "id": "33905eb0-4b49-45f2-b0ce-8446112518cc",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "33905eb0-4b49-45f2-b0ce-8446112518cc",
+    "children": [
+        "2ca62d81-7942-491c-aeef-72a0d673d13a",
+        "adb51d61-c84a-4136-987a-1926d59c9203",
+        "dcdb87ab-a5c5-4c26-8059-886458aec17e"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Items",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
