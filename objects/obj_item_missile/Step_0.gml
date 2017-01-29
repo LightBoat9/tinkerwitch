@@ -12,7 +12,7 @@ if fired = false {
 		}
 	}
 	
-	//Fire the missile
+	//Get the missile target
 	if global.missileAiming = false {
 		scr_move_to(mouse_x,mouse_y,20);
 		fired = true;
@@ -21,11 +21,18 @@ if fired = false {
 
 //While in air
 if fired = true {
+	//Move towards target
 	scr_move_collisions(obj_solid,hsp,vsp);
+	if global.particles = true {
+		repeat(5) {
+			instance_create_depth(x,y,global.depth_1,obj_item_missile_fly_part);
+		}
+	}
 	//Blow up at walls
 	if collision = true {
+		//Create explosion object
 		instance_create_depth(x+end_hsp,y+end_vsp,global.depth_1,obj_item_missile_explosion);
-		//Eplosion Particles
+		//Eplosion particles
 		if global.particles = true {
 			repeat(15) {
 				instance_create_depth(x+end_hsp,y+end_vsp,global.depth_2,obj_item_missile_part);

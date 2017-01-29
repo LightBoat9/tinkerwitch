@@ -1,28 +1,28 @@
 {
-    "id": "65e19751-4d73-44fd-8b5b-a194ad526713",
+    "id": "befe5fd9-82c3-4734-a6c3-c3918eae0ae8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_snail_dmgBox",
+    "name": "obj_item_missile_fly_part",
     "eventList": [
         {
-            "id": "ad424c9c-f6e6-45a1-939e-891ba06b7183",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "65e19751-4d73-44fd-8b5b-a194ad526713"
-        },
-        {
-            "id": "c52ecde9-56e7-4f19-bd2c-137a4860ebcc",
+            "id": "bb370ffc-2acc-4f03-b9dc-69a24dfd88c1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "65e19751-4d73-44fd-8b5b-a194ad526713"
+            "m_owner": "befe5fd9-82c3-4734-a6c3-c3918eae0ae8"
+        },
+        {
+            "id": "a1de5f6e-7dd7-48c1-9e3b-108207a8c45e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "befe5fd9-82c3-4734-a6c3-c3918eae0ae8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -41,6 +41,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "ab4ef483-a0e1-434b-b1fa-d7fb9a0321b9",
+    "spriteId": "8b76666c-2483-4d15-82d9-c4a6e58059f7",
     "visible": true
 }

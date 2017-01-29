@@ -14,3 +14,6 @@ vsp = 0;
 collision = false;
 end_hsp = 0;
 end_vsp = 0;
+
+//Particles
+fly_part_timer = room_speed / 2;

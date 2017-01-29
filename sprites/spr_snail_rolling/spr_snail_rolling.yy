@@ -6,7 +6,7 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 32,
+    "bbox_bottom": 35,
     "bbox_left": 6,
     "bbox_right": 28,
     "bbox_top": 11,

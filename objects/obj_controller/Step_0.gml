@@ -1,5 +1,8 @@
 /// @description Nonconstant Variables
 
+//Allow true random
+randomize();
+
 /* Keybindings */
 //Movement
 global.key_left = keyboard_check(ord("A"));

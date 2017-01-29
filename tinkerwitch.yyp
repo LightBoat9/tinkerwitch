@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "8b76666c-2483-4d15-82d9-c4a6e58059f7",
+            "Value": {
+                "id": "949a9f9f-072f-43af-b964-ec3c63ae0000",
+                "resourcePath": "sprites\\spr_item_missile_fly_part\\spr_item_missile_fly_part.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8bc16618-5619-4f43-88d5-ffde964b4a77",
             "Value": {
                 "id": "77ebeb66-fc44-45dd-9332-59f397c503fa",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "befe5fd9-82c3-4734-a6c3-c3918eae0ae8",
+            "Value": {
+                "id": "759dfdbb-5b30-457a-ab99-dd141e4debd5",
+                "resourcePath": "objects\\obj_item_missile_fly_part\\obj_item_missile_fly_part.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf053eac-c375-4e77-978c-7735a943c10e",
             "Value": {
                 "id": "15214cc4-883f-45c2-ae03-be95ee2e381a",
@@ -444,6 +460,14 @@
                 "id": "0a27f409-a833-4da5-a14c-33c3d0d52159",
                 "resourcePath": "views\\c2359ab4-48e9-46c1-b1a0-01dffb214156.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c325fd77-0b9e-49cd-93c0-2a6f32af5b1a",
+            "Value": {
+                "id": "8d71ec32-4d57-4e73-971b-ed74fe4e2e02",
+                "resourcePath": "scripts\\scr_snail_movement\\scr_snail_movement.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -633,7 +657,8 @@
         "af0a7924-0e92-4ad4-b818-31c7d2ccb1f3",
         "a78a53a5-1a32-4208-8174-4ecc8f745063",
         "31714d91-beec-42e9-965b-5f49d66d1297",
-        "ec0a8805-0b6f-4dd8-934a-65ccce75b778"
+        "ec0a8805-0b6f-4dd8-934a-65ccce75b778",
+        "c325fd77-0b9e-49cd-93c0-2a6f32af5b1a"
     ],
     "tutorial": ""
 }
