@@ -1,32 +1,21 @@
-//Gravity
-vsp += grav;
+/// @description Variables
 
-//Horizontal Collisions
-if place_meeting(x+hsp,y,obj_solid) {
-	while !place_meeting(x+sign(hsp),y,obj_solid) {
-		x += sign(hsp);
-	}
-	hsp = 0;
+//Controller
+if !instance_exists(obj_controller) {
+	instance_create_depth(0,0,0,obj_controller);
 }
 
-//Horizontal Movement
-x += hsp;
+//Movement
+vsp = 0;
+hsp = 0;
+grav = 1;
+jumpspeed = 13.5;
+movespeed = 5;
 
-//Vertical Collisions
-if place_meeting(x,y+vsp,obj_solid) {
-	while !place_meeting(x,y+sign(vsp),obj_solid) {
-		y += sign(vsp);
-	}
-	vsp = 0;
-	hsp = 0;
-}
+//Items
+global.item_wrench = true;
+missileParts = 0;
 
-//Vertical Movement
-y += vsp;
-
-//Destroy Timer / Event
-if destTimer <= 0 {
-	instance_destroy();
-} else {
-	destTimer--;
-}
+//Attacking
+meleeAttack = false;
+meleeHoldTimer = room_speed / 4;

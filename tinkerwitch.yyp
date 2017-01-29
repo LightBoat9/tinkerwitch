@@ -122,7 +122,7 @@
             "Key": "31714d91-beec-42e9-965b-5f49d66d1297",
             "Value": {
                 "id": "6d483e5d-1ac0-457b-8179-3dad74e97820",
-                "resourcePath": "scripts\\scr_reset_dmgBoxes\\scr_reset_dmgBoxes.yy",
+                "resourcePath": "scripts\\scr_reset_dmgBox\\scr_reset_dmgBox.yy",
                 "resourceType": "GMScript"
             }
         },

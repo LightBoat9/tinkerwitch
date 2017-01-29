@@ -1,66 +1,89 @@
-/// @description Insert description here
+draw_self();
 
-//Movement
-scr_player_movement();
-
-//Throw Wrench
-if global.item_wrench = true {
-	if meleeAttack = false {
-		if global.key_wrench {
-			if !instance_exists(obj_wrench) {
-				instance_create_depth(x,y,global.depth_1,obj_wrench);
-				global.item_wrench = false;
-			}
-		}
-	}
-}
-
-//Melee Attack
+/* Horizontal Movement */
+var dir = global.key_left - global.key_right;
+var mouseDir = scr_mouse_dir();
 if meleeAttack = false {
-	if global.missileAiming = false {
-		if global.item_wrench {
-			if global.mouse_left {
-				image_index = 0;
-				meleeAttack = true;
+	//With wrench
+	if global.item_wrench = true {
+		if dir != 0 {
+			if dir = -1 {
+				image_speed = 1;
+				sprite_index = spr_player;
+				image_xscale = 1;
+			}
+			else if dir = 1 {
+				image_speed = 1;
+				sprite_index = spr_player;
+				image_xscale = -1;
 			}
 		}
+		else if dir = 0 {
+			image_speed = 1;
+			sprite_index = spr_player;
+			image_index = 0;
+		}
 	}
-}
-
-//Create Bots
-if global.missileAiming = false {
-	if instance_number(obj_bot) < 8 {
-		if global.key_bots {
-			instance_create_depth(x,y,global.depth_1,obj_bot);
+	//Without Wrench
+	if global.item_wrench = false {
+		if dir != 0 {
+			if dir = -1 {
+				image_speed = 1;
+				sprite_index = spr_player_nowrench;
+				image_xscale = 1;
+			}
+			else if dir = 1 {
+				image_speed = 1;
+				sprite_index = spr_player_nowrench;
+				image_xscale = -1;
+			}
+		}
+		else if dir = 0 {
+			image_speed = 1;
+			sprite_index = spr_player_nowrench;
+			image_index = 0;
 		}
 	}
 }
-
-//Make Missile Parts
-if global.missileAiming = false {
-	if instance_exists(obj_bot) {
-		if global.key_missile {
-			obj_bot.skill = 2;
-			if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
-				if missileParts < 8 {
-					with (instance_nearest(x,y,obj_bot)) {
-						destroy = true;
-					}
-					missileParts++;
+if meleeAttack = true {
+	//Attack Animation
+	if global.item_wrench = true {
+		if mouseDir = 1 {
+			image_speed = 0.4;
+			sprite_index = spr_player_slash;
+			image_xscale = 1;
+		}
+		else if mouseDir = -1 {
+			image_speed = 0.4;
+			sprite_index = spr_player_slash;
+			image_xscale = -1;
+		}
+		
+		//End Animation / Attack
+		if scr_animate_until(3) {
+			image_index = endFrame;		
+			if meleeHoldTimer <= 0 {
+				meleeAttack = false;
+				meleeHoldTimer = room_speed / 4;
+				scr_reset_dmgBox();
+			} else {
+				meleeHoldTimer--;
+			}
+		}
+		
+		//Create Hitbox
+		if meleeAttack = true {
+			if !instance_exists(obj_player_slash_hitbox) {
+				if scr_animate_until(3) {
+					slashBoxInst = instance_create_depth(x,y,global.depth_1,obj_player_slash_hitbox);
 				}
 			}
 		} else {
-			obj_bot.skill = 1;
+			if instance_exists(obj_player_slash_hitbox) {
+				slashBoxInst.destroy = true;
+			}
 		}
+	} else {
+		meleeAttack = false;
 	}
-} else {
-	if instance_exists(obj_bot) {
-		obj_bot.skill = 1;
-	}
-}
-
-//Create Missile
-if missileParts >= 8 {
-	instance_create_depth(x,y,global.depth_0,obj_missile);
-	missileParts = 0;
 }
