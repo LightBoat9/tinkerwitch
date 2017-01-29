@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 //Movement
 scr_player_movement();
 

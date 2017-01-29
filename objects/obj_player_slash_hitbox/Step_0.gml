@@ -1,3 +1,10 @@
+//Testing mode vs normal
+if global.testing = false {
+	visible = false;
+} else {
+	visible = true;
+}
+
 //Destroy Event
 if destroy = true {
 	instance_destroy();

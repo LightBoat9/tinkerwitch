@@ -31,18 +31,18 @@ if stunned = false {
 	switch (dir) {
 		case 0:
 			if rolling = false {
-				hsp = -movespeed;
-			}
-			else if rolling = true {
-				hsp = -rollspeed;
-			}
-			break;
-		case 1:
-			if rolling = false {
 				hsp = movespeed;
 			}
 			else if rolling = true {
 				hsp = rollspeed;
+			}
+			break;
+		case 1:
+			if rolling = false {
+				hsp = -movespeed;
+			}
+			else if rolling = true {
+				hsp = -rollspeed;
 			}
 			break;
 	}
@@ -51,10 +51,10 @@ if stunned = false {
 //Stunned
 if stunned = true {
 	if hsp != 0 {
-		if hsp > 0 {
+		if dir = 0 {
 			hsp -= .5;
 		}
-		if hsp < 0 {
+		if dir = 1 {
 			hsp += .5;
 		}
 	} else {

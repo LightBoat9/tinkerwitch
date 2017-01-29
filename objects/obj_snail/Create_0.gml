@@ -22,3 +22,6 @@ createDmgBox = false;
 
 //Direction #0 is left #1 is right
 dir = irandom(1);
+
+//Health & Damage
+enemy_health = 1;

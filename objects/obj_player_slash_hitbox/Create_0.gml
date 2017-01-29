@@ -1,4 +1,12 @@
+//Destroy Event
 destroy = false;
+
+//Testing mode vs normal
+if global.testing = false {
+	visible = false;
+} else {
+	visible = true;
+}
 
 //Mouse Direction
 var mouseDir = scr_mouse_dir();

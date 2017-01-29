@@ -6,7 +6,8 @@
     "children": [
         "01f2102c-e899-44a5-85e4-164d27cc5e14",
         "2142e4df-21f1-488c-915a-aae3c0646434",
-        "ab4ef483-a0e1-434b-b1fa-d7fb9a0321b9"
+        "ab4ef483-a0e1-434b-b1fa-d7fb9a0321b9",
+        "7ca8b619-3bc7-40fd-aa0f-8dabd9b5f7d7"
     ],
     "filterType": "GMSprite",
     "folderName": "Snail",

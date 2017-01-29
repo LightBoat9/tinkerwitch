@@ -34,3 +34,6 @@ view_visible[0] = true;
 
 //Particle Effects
 global.particles = true;
+
+//Testing Stuff
+global.testing = false;
