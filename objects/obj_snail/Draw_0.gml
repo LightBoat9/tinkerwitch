@@ -1,7 +1,9 @@
 draw_self();
 
 //DELETETHIS
-draw_text(x,y-100,instance_number(obj_snail_dmgBox));
+if instance_exists(obj_snail_dmgBox) {
+draw_text(x,y-100,obj_snail_dmgBox.sprite_width);
+}
 
 //Draw Healthbar
 if !(enemy_health <= 0) {

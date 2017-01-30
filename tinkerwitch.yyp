@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "1c618d6f-4fda-420a-8bd2-8bd001f30d86",
+            "Value": {
+                "id": "b835dfcc-9917-484c-8c58-be3c323f479d",
+                "resourcePath": "views\\1c618d6f-4fda-420a-8bd2-8bd001f30d86.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1eaf7341-89d0-4ccf-b768-546e76c5c639",
             "Value": {
                 "id": "36d22dd6-2275-4ec5-bbb6-c8f4034ecfd1",
@@ -316,6 +324,14 @@
                 "id": "1e995631-5888-414c-99bc-e3b6ba21829b",
                 "resourcePath": "views\\7d4075bf-3bc6-4d7d-990a-4bf0e614bdd8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7ea710e2-2b90-45da-85b5-bdb4cdde54b9",
+            "Value": {
+                "id": "5bfdb5ef-3706-4e8a-bf90-ec5d5b726ad6",
+                "resourcePath": "objects\\obj_snail_anim_death\\obj_snail_anim_death.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -591,6 +607,14 @@
             }
         },
         {
+            "Key": "e7d6347d-4c47-4ed5-82ae-52bdf0c7eb9e",
+            "Value": {
+                "id": "09a38d24-0831-4538-b1cc-308cc73f4c77",
+                "resourcePath": "objects\\obj_snail_part\\obj_snail_part.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ea54efb8-4286-4c4d-adbd-880f4b2f6c01",
             "Value": {
                 "id": "32205dc9-b15c-46bd-a534-8088f863eed8",
@@ -612,6 +636,14 @@
                 "id": "28d29250-9627-490e-8d01-bfba7174a4d5",
                 "resourcePath": "scripts\\scr_move_collisions\\scr_move_collisions.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "eeb53bbd-ba33-4bdf-9642-2ac4eb50cc9c",
+            "Value": {
+                "id": "a4f62dbe-4ad9-4ea9-8ac3-e9484e0b0610",
+                "resourcePath": "sprites\\spr_snail_part\\spr_snail_part.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

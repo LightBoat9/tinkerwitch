@@ -1,7 +1,7 @@
 //Follow snail
 if instance_exists(snail_inst) {
-	x += snail_inst.hsp;
-	y += snail_inst.vsp;
+	x = snail_inst.x;
+	y = snail_inst.y;
 }
 
 // Testing Mode vs Normal
@@ -19,18 +19,20 @@ if place_meeting(x,y,obj_player_slash_hitbox) {
 		}
 		rolling = false;
 		stunned = true;
-		instance_destroy();
 	}
+	instance_destroy();
 }
 if place_meeting(x,y,obj_item_missile) {
-	obj_item_missile.collision = true;
-	with (snail_inst) {
-		enemy_health -= .5;
-		rolling = false;
-		stunned = true;
+	if obj_item_missile.fired = true {
+		obj_item_missile.collision = true;
+		with (snail_inst) {
+			enemy_health -= .5;
+			rolling = false;
+			stunned = true;
+		}
+		scr_reset_dmgBox();
+		instance_destroy();
 	}
-	scr_reset_dmgBox();
-	instance_destroy();
 }
 
 //Destroy If Snail Dies
