@@ -23,19 +23,32 @@ if fired = false {
 if fired = true {
 	//Move towards target
 	scr_move_collisions(obj_solid,hsp,vsp);
+	//Create engine particles
 	if global.particles = true {
 		repeat(5) {
 			instance_create_depth(x,y,global.depth_1,obj_item_missile_fly_part);
 		}
 	}
-	//Blow up at walls
-	if collision = true {
+	//Blow up at walls or objects
+	if collision = true || coll_solid = true {
 		//Create explosion object
-		instance_create_depth(x+end_hsp,y+end_vsp,global.depth_1,obj_item_missile_explosion);
+		if coll_solid = true {
+			instance_create_depth(x+end_hsp,y+end_vsp,global.depth_1,obj_item_missile_explosion);
+		}
+		else if collision = true {
+			instance_create_depth(x,y,global.depth_1,obj_item_missile_explosion);
+		}
 		//Eplosion particles
 		if global.particles = true {
-			repeat(15) {
-				instance_create_depth(x+end_hsp,y+end_vsp,global.depth_2,obj_item_missile_part);
+			if coll_solid = true {
+				repeat(15) {
+					instance_create_depth(x+end_hsp,y+end_vsp,global.depth_2,obj_item_missile_part);
+				}
+			}
+			else if collision = true {
+				repeat(15) {
+					instance_create_depth(x,y,global.depth_2,obj_item_missile_part);
+				}
 			}
 		}
 		instance_destroy();

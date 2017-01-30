@@ -1,14 +1,14 @@
 //Add dmgBox for next damage
-if !instance_exists(obj_snail_dmgBox) {
-	if createDmgBox = true {
-		dmgBoxInst = instance_create_depth(x,y,global.depth_2,obj_snail_dmgBox)
-		createDmgBox = false;
+if createDmgBox = true {
+	if !instance_exists(inst_dmgBox) {
+		inst_dmgBox = instance_create_depth(x,y,global.depth_2,obj_snail_dmgBox)
 	}
+	createDmgBox = false;
 }
 
 //Start rolling
 if stunned = false {
-	if distance_to_object(obj_player) < (32 * 5) {
+	if distance_to_object(obj_player) < (32 * 10) {
 		rolling = true;
 	}
 }
@@ -62,3 +62,8 @@ if stunned = true {
 	}
 }
 scr_snail_movement();
+
+// Destroy Event
+if enemy_health <= 0 {
+	instance_destroy();
+}

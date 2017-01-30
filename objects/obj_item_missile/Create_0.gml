@@ -11,7 +11,8 @@ hsp = 0;
 vsp = 0;
 
 //Collisions
-collision = false;
+coll_solid = false; //Collision with obj_solid
+collision = false; //Collision with other objects (See above)
 end_hsp = 0;
 end_vsp = 0;
 

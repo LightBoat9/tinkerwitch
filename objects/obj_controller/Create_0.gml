@@ -36,4 +36,4 @@ view_visible[0] = true;
 global.particles = true;
 
 //Testing Stuff
-global.testing = false;
+global.testing = true;

@@ -12,7 +12,7 @@ if place_meeting(x+hsp, y, collision_obj) {
 	}
 	end_hsp = hsp;
 	hsp = 0;
-	collision = true;
+	coll_solid = true;
 }
 
 x += hsp;
@@ -23,7 +23,7 @@ if place_meeting(x, y+vsp, collision_obj) {
 	}
 	end_vsp = vsp;
 	vsp = 0;
-	collision = true;
+	coll_solid = true;
 }
 
 y += vsp;

@@ -65,6 +65,7 @@ if meleeAttack = true {
 			if meleeHoldTimer <= 0 {
 				meleeAttack = false;
 				meleeHoldTimer = room_speed / 4;
+				//Reset Damage Boxes
 				scr_reset_dmgBox();
 			} else {
 				meleeHoldTimer--;

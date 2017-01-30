@@ -1,5 +1,4 @@
 /* Hitboxes & Collisions */
-
 //Depth
 depth = global.depth_3;
 
@@ -17,7 +16,7 @@ rolling = false;
 stunned = false;
 
 //Damage Box
-dmgBoxInst = instance_create_depth(x,y,global.depth_2,obj_snail_dmgBox)
+inst_dmgBox = instance_create_depth(x,y,global.depth_2,obj_snail_dmgBox)
 createDmgBox = false;
 
 //Direction #0 is left #1 is right
