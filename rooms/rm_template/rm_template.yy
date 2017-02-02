@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "name": "rm_template",
     "IsDnD": false,
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -5321,8 +5321,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_97F3C1F",
-                    "x": 896,
-                    "y": 768,
+                    "x": 1216,
+                    "y": 800,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -5395,7 +5395,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -5407,7 +5407,7 @@
             "m_serialiseFrozen": false,
             "name": "Tiles_CastleBack",
             "userdefined_depth": false,
-            "visible": true,
+            "visible": false,
             "prev_tileheight": 32,
             "prev_tilewidth": 32,
             "tiles": {
@@ -7480,21 +7480,21 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Background",
+            "name": "Background_Top",
             "userdefined_depth": false,
             "visible": true,
             "animationFPS": 15,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4286545752
+                "Value": 4294967295
             },
             "hspeed": 0,
-            "htiled": false,
-            "spriteId": "00000000-0000-0000-0000-000000000000",
+            "htiled": true,
+            "spriteId": "9d06db78-31aa-4665-aed5-d25f532a08a1",
             "stretch": false,
             "userdefined_animFPS": false,
             "vspeed": 0,
-            "vtiled": false,
+            "vtiled": true,
             "x": 0,
             "y": 0
         }

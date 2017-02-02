@@ -1,5 +1,7 @@
 draw_self();
 
+draw_text(x,y-100,room_get_viewport(rm_level_1_1,0));
+
 /* Horizontal Movement */
 var dir = global.key_left - global.key_right;
 var mouseDir = scr_mouse_dir();
@@ -49,12 +51,12 @@ if meleeAttack = true {
 	//Attack Animation
 	if global.item_wrench = true {
 		if mouseDir = 1 {
-			image_speed = 0.4;
+			image_speed = 0.3;
 			sprite_index = spr_player_slash;
 			image_xscale = 1;
 		}
 		else if mouseDir = -1 {
-			image_speed = 0.4;
+			image_speed = 0.3;
 			sprite_index = spr_player_slash;
 			image_xscale = -1;
 		}

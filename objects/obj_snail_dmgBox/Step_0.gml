@@ -4,6 +4,17 @@ if instance_exists(snail_inst) {
 	y = snail_inst.y;
 }
 
+//Change Direction With Snail
+if instance_exists(snail_inst) {
+	dir = snail_inst.dir;
+	if dir = 0 {
+		image_xscale = 1;
+	}
+	else if dir = 1 {
+		image_xscale = -1;
+	}
+}
+
 // Testing Mode vs Normal
 if global.testing = false {
 	visible = false;
@@ -26,7 +37,7 @@ if place_meeting(x,y,obj_item_missile) {
 	if obj_item_missile.fired = true {
 		obj_item_missile.collision = true;
 		with (snail_inst) {
-			enemy_health -= .5;
+			enemy_health -= 1;
 			rolling = false;
 			stunned = true;
 		}

@@ -1,3 +1,13 @@
+//Knockback timer
+if move_manip = true {
+	if mm_timer <= 0 {
+		move_manip = false;
+		mm_timer = room_speed / 2;
+	} else {
+		mm_timer--;
+	}
+}
+
 //Movement
 scr_player_movement();
 

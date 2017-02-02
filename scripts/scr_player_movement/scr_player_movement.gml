@@ -2,7 +2,10 @@
 
 //Input
 move = global.key_right - global.key_left;
-hsp = move * movespeed;
+//While not getting hit move horizontally 
+if move_manip = false {	
+	hsp = move * movespeed;
+}
 
 //Gravity
 if vsp < 20 {
@@ -10,8 +13,10 @@ if vsp < 20 {
 }
 
 //Jumping
-if place_meeting(x,y+1,obj_solid) {
-	vsp = global.key_jump * -jumpspeed;
+if move_manip = false {
+	if place_meeting(x,y+1,obj_solid) {
+		vsp = global.key_jump * -jumpspeed;
+	}
 }
 
 //Collisions

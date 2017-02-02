@@ -16,3 +16,10 @@ global.key_bots = keyboard_check(ord("F"));
 global.key_missile = keyboard_check(ord("E"));
 /* Mouse Bindings */
 global.mouse_left = mouse_check_button(mb_left);
+
+/* Backgrounds */
+/* COMMENTED OUT CODE FOR MOVING BACKGROUNDS 
+bgr_top = layer_get_id("Background_Top");
+cam_x = camera_get_view_x(cam);
+layer_x(bgr_top, cam_x);
+*/

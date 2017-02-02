@@ -19,3 +19,11 @@ missileParts = 0;
 //Attacking
 meleeAttack = false;
 meleeHoldTimer = room_speed / 4;
+
+/*
+ * Movement Manipulation
+ * @move_manip The Ability to stop normal movement of the player 
+ * and manipulate it as needed
+*/
+move_manip = false;
+mm_timer = room_speed / 2;

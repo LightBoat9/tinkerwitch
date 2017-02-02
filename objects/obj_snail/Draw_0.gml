@@ -1,16 +1,11 @@
 draw_self();
-
-//DELETETHIS
-if instance_exists(obj_snail_dmgBox) {
-draw_text(x,y-100,obj_snail_dmgBox.sprite_width);
-}
-
 //Draw Healthbar
 if !(enemy_health <= 0) {
 	draw_sprite(spr_health_bar_top,-1,x-16,y-24);
 	draw_sprite_ext(spr_health_bar_bot,-1,x-16,y-24,enemy_health,1,0,c_white,1);
 }
 
+//Rolling Sprite
 if rolling = true {
 	if dir = 0 {
 		image_speed = 1;
@@ -23,6 +18,7 @@ if rolling = true {
 		image_xscale = -1;
 	}
 }
+//Stunned Sprite
 else if stunned = true {
 	if dir = 0 {
 		image_speed = 1;
@@ -35,6 +31,7 @@ else if stunned = true {
 		image_xscale = -1;
 	}
 }
+//Normal Movement Sprite
 else {
 	if dir = 0 {
 		image_speed = 1;
