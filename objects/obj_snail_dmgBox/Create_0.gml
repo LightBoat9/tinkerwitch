@@ -9,7 +9,8 @@ if global.testing = false {
 snail_inst = instance_nearest(x,y,obj_snail);
 
 //Follow snail
-if instance_exists(obj_snail) {
+if instance_exists(snail_inst) {
 	x = snail_inst.x;
 	y = snail_inst.y;
 }
+

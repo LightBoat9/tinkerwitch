@@ -8,14 +8,7 @@ if stunned = false {
 /* Direction */
 //Switch Direction At Walls
 if place_meeting(x+hsp,y,obj_solid) {
-	switch(dir) {
-		case 0:
-			dir = 1;
-			break;
-		case 1:
-			dir = 0;
-			break;
-	}
+	scr_snail_dir_switch();
 }
 
 //Change horizontal speed based on direction
@@ -53,7 +46,31 @@ if stunned = true {
 		stunned = false;
 	}
 }
+
+//Movement
 scr_snail_movement();
+
+//Hitting Player
+if stunned = false {
+	if obj_player.move_manip = false {
+		if instance_exists(obj_player) {
+			if place_meeting(x+hsp,y,obj_player) {
+				obj_player.player_health -= .25;
+				obj_player.move_manip = true;
+				obj_player.hsp = (hsp * 2);
+				obj_player.vsp = -5;
+				scr_snail_dir_switch();
+			}
+			else if place_meeting(x,y+vsp,obj_player) {
+				obj_player.player_health -= .25;
+				obj_player.move_manip = true;
+				obj_player.hsp = (hsp * 2);
+				obj_player.vsp = -5;
+				scr_snail_dir_switch();
+			}
+		}
+	}
+}
 
 //Add dmgBox for next damage
 if createDmgBox = true {
@@ -63,21 +80,7 @@ if createDmgBox = true {
 	createDmgBox = false;
 }
 
-//Hitting Player
-if obj_player.move_manip = false {
-	if instance_exists(obj_player) {
-		if place_meeting(x+hsp,y,obj_player) {
-			obj_player.move_manip = true;
-			obj_player.hsp = (hsp * 2);
-			obj_player.vsp = -5;
-		}
-		else if place_meeting(x,y+vsp,obj_player) {
-			obj_player.move_manip = true;
-			obj_player.hsp = (hsp * 2);
-			obj_player.vsp = -5;
-		}
-	}
-}
+
 
 // Destroy Event
 if enemy_health <= 0 {

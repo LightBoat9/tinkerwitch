@@ -28,20 +28,20 @@ global.bot_eight = false;
  * Video Options 
 */
 
-//View dimentions
+/* Views */
 view_width = 1280;
 view_height = 720;
-
-/*/View camera (Follows player)
 view_enabled = true;
 view_visible[0] = true;
-player_cam = camera_create();
-camera_set_view_size(player_cam, view_width, view_height);
-camera_set_view_target(player_cam,obj_player);
-view_set_camera(player_cam,player_cam);
 view_wport[0] = view_width;
 view_hport[0] = view_height;
-*/
+cam = view_get_camera(view_current);
+cam_mid_x = camera_get_view_width(cam) / 2;
+cam_mid_y = camera_get_view_height(cam) / 2;
+camera_set_view_border(cam, camera_get_view_width(cam) / 2, camera_get_view_height(cam) / 2)
+camera_set_view_pos(cam, cam_mid_x, cam_mid_y);
+camera_set_view_size(cam, 1280, 720);
+view_set_camera(view_current, cam);
 
 //Particle Effects
 global.particles = true;

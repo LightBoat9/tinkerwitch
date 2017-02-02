@@ -1,6 +1,10 @@
 draw_self();
 
-draw_text(x,y-100,room_get_viewport(rm_level_1_1,0));
+//TEMPORARY HEALTH BAR
+if !(player_health <= 0) {
+	draw_sprite(spr_health_bar_top,-1,x-16,y-48);
+	draw_sprite_ext(spr_health_bar_bot,-1,x-16,y-48,player_health,1,0,c_white,1);
+}
 
 /* Horizontal Movement */
 var dir = global.key_left - global.key_right;

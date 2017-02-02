@@ -2,3 +2,6 @@
 if instance_exists(obj_snail) {
 	obj_snail.createDmgBox = true;
 }
+if instance_exists(obj_box) {
+	obj_box.createDmgBox = true;
+}

@@ -27,3 +27,6 @@ meleeHoldTimer = room_speed / 4;
 */
 move_manip = false;
 mm_timer = room_speed / 2;
+
+//Health
+player_health = 1;
