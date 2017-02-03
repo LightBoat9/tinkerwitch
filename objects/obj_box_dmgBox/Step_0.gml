@@ -22,7 +22,7 @@ if place_meeting(x,y,obj_item_missile) {
 	if obj_item_missile.fired = true {
 		obj_item_missile.collision = true;
 		with (box_inst) {
-			enemy_health -= 1;
+			box_health -= 1;
 		}
 		scr_reset_dmgBox();
 		instance_destroy();

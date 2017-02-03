@@ -3,10 +3,17 @@ scr_box_movement();
 
 //Destroy Event
 if box_health <= 0 {
-	repeat(4) {
-		part++;
-		box_part = instance_create_depth(x,y,global.depth_1,obj_box_part);
-		box_part.part = part;
+	//Corner Particles
+	if global.particles {
+		repeat(4) {
+			part++;
+			box_part = instance_create_depth(x+8,y+8,global.depth_1,obj_box_corner_part);
+			box_part.part = part;
+		}
+	//Destroy Particles
+		repeat(15) {
+			instance_create_depth(x+8,y+8,global.depth_1,obj_box_part);
+		}
 	}
 	instance_destroy();
 }
@@ -14,7 +21,7 @@ if box_health <= 0 {
 //Add dmgBox for next damage
 if createDmgBox = true {
 	if !instance_exists(inst_dmgBox) {
-		inst_dmgBox = instance_create_depth(x,y,global.depth_2,obj_box_dmgBox)
+		inst_dmgBox = instance_create_depth(x,y,global.depth_2,obj_box_dmgBox);
 	}
 	createDmgBox = false;
 }

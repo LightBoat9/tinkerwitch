@@ -1,11 +1,6 @@
 //Movement
-movespeed = 7;
-
-/* 
- * Part 
- * 1 = Top Right
- * 2 = Top Left
- * 3 = Bot Left
- * 4 = Bot Right
-*/
-part = 1;
+hsp = irandom_range(-3,3);
+vsp = irandom_range(-3,-7);
+grav = 1;
+//Destroy Timer
+destTimer = room_speed * 2;

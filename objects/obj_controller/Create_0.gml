@@ -38,7 +38,7 @@ view_hport[0] = view_height;
 cam = view_get_camera(view_current);
 cam_mid_x = camera_get_view_width(cam) / 2;
 cam_mid_y = camera_get_view_height(cam) / 2;
-camera_set_view_border(cam, camera_get_view_width(cam) / 2, camera_get_view_height(cam) / 2)
+camera_set_view_border(cam, cam_mid_x, cam_mid_y);
 camera_set_view_pos(cam, cam_mid_x, cam_mid_y);
 camera_set_view_size(cam, 1280, 720);
 view_set_camera(view_current, cam);

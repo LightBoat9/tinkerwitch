@@ -8,9 +8,7 @@ if move_manip = false {
 }
 
 //Gravity
-if vsp < 20 {
-	vsp += grav;
-}
+vsp += grav;
 
 //Jumping
 if move_manip = false {
@@ -32,6 +30,10 @@ x += hsp;
 if place_meeting(x,y+vsp,obj_solid) {
 	while (!place_meeting(x,y+sign(vsp),obj_solid)) {
 		y += sign(vsp);
+	}
+	//Fall Damage
+	if vsp > 5 {
+		player_health -= .10;
 	}
 	vsp = 0;
 }

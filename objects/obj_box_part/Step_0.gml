@@ -1,32 +1,32 @@
-//Move Direction Based On Part
+//Gravity
+vsp += grav;
 
-/* 
- * 1 = Top Right
- * 2 = Top Left
- * 3 = Bot Left
- * 4 = Bot Right
-*/
-
-if part = 1 {
-	x += movespeed;
-	y -= movespeed;
-}
-else if part = 2 {
-	x -= movespeed;
-	y -= movespeed;
-}
-else if part = 3 {
-	x -= movespeed;
-	y += movespeed;
-}
-else if part = 4 {
-	x += movespeed;
-	y += movespeed;
+//Horizontal Collisions
+if place_meeting(x+hsp,y,obj_solid) {
+	while !place_meeting(x+sign(hsp),y,obj_solid) {
+		x += sign(hsp);
+	}
+	hsp = 0;
 }
 
-//Becomes transparent
-if image_alpha > 0 {
-	image_alpha -= .15;
-} else {
+//Horizontal Movement
+x += hsp;
+
+//Vertical Collisions
+if place_meeting(x,y+vsp,obj_solid) {
+	while !place_meeting(x,y+sign(vsp),obj_solid) {
+		y += sign(vsp);
+	}
+	vsp = 0;
+	hsp = 0;
+}
+
+//Vertical Movement
+y += vsp;
+
+//Destroy Timer / Event
+if destTimer <= 0 {
 	instance_destroy();
+} else {
+	destTimer--;
 }

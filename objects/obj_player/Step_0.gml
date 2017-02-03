@@ -1,8 +1,10 @@
 //Knockback timer
 if move_manip = true {
 	if mm_timer <= 0 {
-		move_manip = false;
-		mm_timer = room_speed / 2;
+		if place_meeting(x,y+1,obj_solid) {
+			move_manip = false;
+			mm_timer = room_speed / 2;
+		}
 	} else {
 		mm_timer--;
 	}
