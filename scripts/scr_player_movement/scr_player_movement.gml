@@ -32,7 +32,7 @@ if place_meeting(x,y+vsp,obj_solid) {
 		y += sign(vsp);
 	}
 	//Fall Damage
-	if vsp > 20 {
+	if vsp > 25 {
 		player_health -= .10;
 	}
 	vsp = 0;

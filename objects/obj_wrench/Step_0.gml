@@ -4,24 +4,28 @@
 	@returnTimer the time the wrench stays in the wall
 	@distance the distance from the original player position that the wrench will fly
 */
-if place_meeting(x+hsp, y, obj_solid) {
-	while !place_meeting(x+sign(hsp),y,obj_solid) {
-		x += sign(hsp);
+if collided = false {
+	if place_meeting(x+hsp, y, obj_solid) {
+		while !place_meeting(x+sign(hsp),y,obj_solid) {
+			x += sign(hsp);
+		}
+		hsp = 0;
+		vsp = 0;
+		collided = true;
 	}
-	hsp = 0;
-	vsp = 0;
-	collided = true;
 }
 
 x += hsp;
 
-if place_meeting(x, y+vsp, obj_solid) {
-	while !place_meeting(x, y+sign(vsp), obj_solid) {
-		y += sign(vsp);
+if collided = false {
+	if place_meeting(x, y+vsp, obj_solid) {
+		while !place_meeting(x, y+sign(vsp), obj_solid) {
+			y += sign(vsp);
+		}
+		hsp = 0;
+		vsp = 0;
+		collided = true;
 	}
-	hsp = 0;
-	vsp = 0;
-	collided = true;
 }
 
 y += vsp;
