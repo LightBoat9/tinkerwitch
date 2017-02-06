@@ -1,3 +1,4 @@
+//Change Direction
 if dir = 0 {
 	hsp = movespeed;
 }
@@ -25,14 +26,18 @@ if hsp_free > 0 {
 	hsp = 0;
 	grav = 1;
 	movespeed = 3;
-	switch (dir) {
-		case 0:
-			dir = 1;
-			break;
-		case 1:
-			dir = 0;
-			break;
+	//Switch Direction #only when not on the ground
+	if !place_meeting(x,y+1,obj_solid) {
+		switch (dir) {
+			case 0:
+				dir = 1;
+				break;
+			case 1:
+				dir = 0;
+				break;
+		}
 	}
+	//Hit Player
 	if player_hit {
 		obj_player.player_health -= .25;
 		obj_player.move_manip = true;
