@@ -1,5 +1,6 @@
 draw_self();
 
+//Draw based on direction
 if dir = 0 {
 	image_xscale = 1;
 }

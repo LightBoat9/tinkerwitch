@@ -7,3 +7,6 @@ dir = 1; //0 = right, 1 = left
 
 //Player Collision
 player_hit = false
+
+//Hit Wall
+hit_obj = false;

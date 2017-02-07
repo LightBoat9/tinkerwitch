@@ -33,7 +33,7 @@ if place_meeting(x,y+vsp,obj_solid) {
 	}
 	//Fall Damage
 	if vsp > 25 {
-		player_health -= .10;
+		player_health -= vsp * .01;
 	}
 	vsp = 0;
 }

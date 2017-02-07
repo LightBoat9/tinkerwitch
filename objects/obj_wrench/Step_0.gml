@@ -4,6 +4,8 @@
 	@returnTimer the time the wrench stays in the wall
 	@distance the distance from the original player position that the wrench will fly
 */
+
+//Horizontal Movement / Collisions
 if collided = false {
 	if place_meeting(x+hsp, y, obj_solid) {
 		while !place_meeting(x+sign(hsp),y,obj_solid) {
@@ -17,6 +19,7 @@ if collided = false {
 
 x += hsp;
 
+//Vertical Movement / Collisions
 if collided = false {
 	if place_meeting(x, y+vsp, obj_solid) {
 		while !place_meeting(x, y+sign(vsp), obj_solid) {
@@ -30,7 +33,7 @@ if collided = false {
 
 y += vsp;
 
-
+//After Collided with wall
 if collided = true { 
 	if returnTimer <= 0 {
 		scr_move_to(obj_player.x,obj_player.y,spd);
@@ -44,6 +47,7 @@ if collided = true {
 		returnTimer--;
 	}
 } else {
+	//While no Collision
 	if distance <= 0 {
 		scr_move_to(obj_player.x,obj_player.y,spd);
 		var dir = point_direction(x,y,obj_player.x,obj_player.y);

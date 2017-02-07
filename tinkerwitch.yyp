@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "2c9d92c5-4d9c-4d68-b5bd-a1fbbbf4fa81",
+            "Value": {
+                "id": "2a4de373-911a-4151-a0c2-87453625d3e3",
+                "resourcePath": "objects\\obj_door_enter\\obj_door_enter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2ca62d81-7942-491c-aeef-72a0d673d13a",
             "Value": {
                 "id": "7c2878ae-d03f-47db-acb9-d2e9d98f5c3a",
@@ -300,6 +308,14 @@
                 "id": "cdec18ff-cd4e-4d85-9905-ebc9879364ae",
                 "resourcePath": "views\\589b847e-27a7-47ba-9d41-014de8d9d765.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "58e2a0da-0742-442c-a3f2-efcc40dd831f",
+            "Value": {
+                "id": "066a75ec-0747-42c8-b350-44b02a341887",
+                "resourcePath": "objects\\obj_lava\\obj_lava.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -468,6 +484,14 @@
                 "id": "5a2c86b3-6b5c-412b-ac36-7048e6b4703a",
                 "resourcePath": "views\\87c3a762-cd1b-45a6-a84b-9fe9a06a5f6f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8a1f8f57-01f7-4db6-a016-8fe3013bf1e2",
+            "Value": {
+                "id": "cea1ef61-5238-40a5-8d1d-36f92dc66c55",
+                "resourcePath": "sprites\\spr_lava_top\\spr_lava_top.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -740,6 +764,14 @@
                 "id": "cb231b40-620c-4a2e-8bf4-96266cf3ef10",
                 "resourcePath": "objects\\obj_item_missile_explosion\\obj_item_missile_explosion.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc770abd-73d4-4eee-8177-1bea4929df93",
+            "Value": {
+                "id": "dd30fd8c-3304-4c49-8b22-c66e1b36bd82",
+                "resourcePath": "sprites\\spr_lava_bot\\spr_lava_bot.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

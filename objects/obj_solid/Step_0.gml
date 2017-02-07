@@ -1,3 +1,4 @@
+//Start making metal
 if has_metal = true {
 	if place_meeting(x+1,y,obj_wrench) {
 		has_metal = false;
@@ -17,6 +18,7 @@ if has_metal = true {
 	}
 }
 
+//Create metal object based on metal value
 if make_metal = true {
 	inst_metal = instance_create_depth(obj_wrench.x,obj_wrench.y,global.depth_1,obj_metal);
 	inst_metal.metal_val = metal_val;

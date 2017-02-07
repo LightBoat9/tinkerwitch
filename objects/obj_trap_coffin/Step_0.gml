@@ -27,13 +27,15 @@ if hsp_free > 0 {
 	grav = 1;
 	movespeed = 3;
 	//Switch Direction #only when not on the ground
-	if !place_meeting(x,y+1,obj_solid) {
+	if hit_obj = false {
 		switch (dir) {
 			case 0:
 				dir = 1;
+				hit_obj = true;
 				break;
 			case 1:
 				dir = 0;
+				hit_obj = true;
 				break;
 		}
 	}

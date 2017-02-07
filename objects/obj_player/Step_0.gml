@@ -75,3 +75,7 @@ if missileParts >= 8 {
 	missileParts = 0;
 }
 
+//Death Event
+if player_health <= 0 {
+	room_restart();
+}
