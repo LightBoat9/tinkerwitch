@@ -26,6 +26,21 @@ if moving {
 			vsp -= jumpspeed
 		}
 	}
+	/* Jump over pits */
+	//Moving Right
+	if hsp > 0 {
+		if !place_meeting(x+8,y+8, obj_solid) {
+			if place_meeting(x,y+1,obj_solid) {
+				vsp -= jumpspeed
+			}
+		}
+		//Moving Left
+		if !place_meeting(x-8,y+8, obj_solid) {
+			if place_meeting(x,y+1,obj_solid) {
+				vsp -= jumpspeed
+			}
+		}
+	}
 }
 
 /* Switch hsp based on direction */
@@ -40,12 +55,16 @@ switch (dir) {
 
 /* Stop movement when near player */
 if distance_to_object(obj_player) < 32*2 {
-	hsp = 0;
+	if place_meeting(x,y+1,obj_solid) {
+		hsp = 0;
+	}
 }
 
 /* Stopped by player */
 if moving = false {
-	hsp = 0;
+	if place_meeting(x,y+1,obj_solid) {
+		hsp = 0;
+	}
 }
 
 /* Gravity */
