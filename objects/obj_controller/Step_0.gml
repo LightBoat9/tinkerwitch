@@ -14,6 +14,7 @@ global.key_jump = keyboard_check(vk_space);
 global.key_wrench = keyboard_check(ord("Q"));
 global.key_bots = keyboard_check(ord("F"));
 global.key_missile = keyboard_check(ord("E"));
+global.key_bot = keyboard_check(ord("R"));
 /* Mouse Bindings */
 global.mouse_left = mouse_check_button(mb_left);
 

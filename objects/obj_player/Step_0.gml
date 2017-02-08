@@ -38,34 +38,38 @@ if meleeAttack = false {
 }
 
 //Create Bots
-if global.missileAiming = false {
-	if instance_number(obj_bot) < 8 {
-		if global.key_bots {
-			instance_create_depth(x,y,global.depth_1,obj_bot);
+if global.item_wrench = true {
+	if global.missileAiming = false {
+		if instance_number(obj_bot) < 8 {
+			if global.key_bots {
+				instance_create_depth(x,y,global.depth_1,obj_bot);
+			}
 		}
 	}
 }
 
 //Make Missile Parts
-if global.missileAiming = false {
-	if instance_exists(obj_bot) {
-		if global.key_missile {
-			obj_bot.skill = 2;
-			if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
-				if missileParts < 8 {
-					with (instance_nearest(x,y,obj_bot)) {
-						destroy = true;
+if global.item_wrench = true {
+	if global.missileAiming = false {
+		if instance_exists(obj_bot) {
+			if global.key_missile {
+				obj_bot.skill = 2;
+				if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
+					if missileParts < 8 {
+						with (instance_nearest(x,y,obj_bot)) {
+							destroy = true;
+						}
+						missileParts++;
 					}
-					missileParts++;
 				}
+			} else {
+				obj_bot.skill = 1;
 			}
-		} else {
+		}
+	} else {
+		if instance_exists(obj_bot) {
 			obj_bot.skill = 1;
 		}
-	}
-} else {
-	if instance_exists(obj_bot) {
-		obj_bot.skill = 1;
 	}
 }
 

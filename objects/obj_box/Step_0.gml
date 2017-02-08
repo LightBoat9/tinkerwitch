@@ -15,6 +15,8 @@ if box_health <= 0 {
 			instance_create_depth(x+8,y+8,global.depth_1,obj_box_part);
 		}
 	}
+	//Drop Item
+	instance_create_depth(x+8,y+8,global.depth_1,drop_item);
 	instance_destroy();
 }
 

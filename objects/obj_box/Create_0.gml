@@ -15,3 +15,6 @@ createDmgBox = false;
 
 //Box Part
 part = 0;
+
+//Drop Item
+drop_item = obj_bot_bomb;

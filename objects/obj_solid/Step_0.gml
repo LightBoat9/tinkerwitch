@@ -1,20 +1,24 @@
 //Start making metal
-if has_metal = true {
-	if place_meeting(x+1,y,obj_wrench) {
-		has_metal = false;
-		make_metal = true;
-	}
-	else if place_meeting(x-1,y,obj_wrench) {
-		has_metal = false;
-		make_metal = true;
-	}
-	else if place_meeting(x,y+1,obj_wrench) {
-		has_metal = false;
-		make_metal = true;
-	}
-	else if place_meeting(x,y-1,obj_wrench) {
-		has_metal = false;
-		make_metal = true;
+if instance_exists(obj_wrench) {
+	if has_metal = true {
+		if obj_wrench.returnTimer <= 0 {
+			if place_meeting(x+1,y,obj_wrench) {
+				has_metal = false;
+				make_metal = true;
+			}
+			else if place_meeting(x-1,y,obj_wrench) {
+				has_metal = false;
+				make_metal = true;
+			}
+			else if place_meeting(x,y+1,obj_wrench) {
+				has_metal = false;
+				make_metal = true;
+			}
+			else if place_meeting(x,y-1,obj_wrench) {
+				has_metal = false;
+				make_metal = true;
+			}
+		}
 	}
 }
 
