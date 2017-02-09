@@ -1,3 +1,6 @@
 //Player Collision
-if place_meeting(x,y,obj_player) {
+if draw_txt {
+	if place_meeting(x,y,obj_player) {
+		
+	}
 }

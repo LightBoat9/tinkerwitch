@@ -15,7 +15,7 @@ scr_player_movement();
 
 //Throw Wrench
 if global.item_wrench = true {
-	if meleeAttack = false {
+	if empAttack = false {
 		if global.key_wrench {
 			if !instance_exists(obj_wrench) {
 				instance_create_depth(x,y,global.depth_1,obj_wrench);
@@ -25,13 +25,13 @@ if global.item_wrench = true {
 	}
 }
 
-//Melee Attack
-if meleeAttack = false {
+//EMP Attack
+if empAttack = false {
 	if global.missileAiming = false {
 		if global.item_wrench {
 			if global.mouse_left {
 				image_index = 0;
-				meleeAttack = true;
+				empAttack = true;
 			}
 		}
 	}

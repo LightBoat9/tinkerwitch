@@ -17,4 +17,4 @@ createDmgBox = false;
 part = 0;
 
 //Drop Item
-drop_item = obj_bot_bomb;
+drop_item = obj_metal;

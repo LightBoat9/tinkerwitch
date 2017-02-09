@@ -17,8 +17,8 @@ global.item_wrench = true;
 missileParts = 0;
 
 //Attacking
-meleeAttack = false;
-meleeHoldTimer = room_speed / 4;
+empAttack = false;
+empHoldTimer = room_speed / 4;
 
 /*
  * Movement Manipulation

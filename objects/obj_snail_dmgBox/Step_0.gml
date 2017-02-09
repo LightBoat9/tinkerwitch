@@ -23,13 +23,14 @@ if global.testing = false {
 }
 
 // Getting Hit
-if place_meeting(x,y,obj_player_slash_hitbox) {
+if place_meeting(x,y,spr_player_emp_proj) {
 	with (snail_inst) {
 		if stunned = true {
 			enemy_health -= .5;
 		}
 		rolling = false;
 		stunned = true;
+		destroy = true;
 	}
 	instance_destroy();
 }

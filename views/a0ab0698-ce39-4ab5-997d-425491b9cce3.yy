@@ -8,7 +8,7 @@
         "d21607ff-a9bd-46b0-aa1b-d1242d80907b"
     ],
     "filterType": "GMSprite",
-    "folderName": "Slash",
+    "folderName": "EMP",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

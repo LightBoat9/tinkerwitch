@@ -9,7 +9,7 @@ if (player_health > 0) {
 /* Horizontal Movement */
 var dir = global.key_left - global.key_right;
 var mouseDir = scr_mouse_dir();
-if meleeAttack = false {
+if empAttack = false {
 	//With wrench
 	if global.item_wrench = true {
 		if dir != 0 {
@@ -51,46 +51,29 @@ if meleeAttack = false {
 		}
 	}
 }
-if meleeAttack = true {
+if empAttack = true {
 	//Attack Animation
 	if global.item_wrench = true {
 		if mouseDir = 1 {
 			image_speed = 0.3;
-			sprite_index = spr_player_slash;
+			sprite_index = spr_player_emp;
 			image_xscale = 1;
 		}
 		else if mouseDir = -1 {
 			image_speed = 0.3;
-			sprite_index = spr_player_slash;
+			sprite_index = spr_player_emp;
 			image_xscale = -1;
 		}
 		
-		//End Animation / Attack
-		if scr_animate_until(3) {
-			image_index = endFrame;		
-			if meleeHoldTimer <= 0 {
-				meleeAttack = false;
-				meleeHoldTimer = room_speed / 4;
-				//Reset Damage Boxes
-				scr_reset_dmgBox();
-			} else {
-				meleeHoldTimer--;
-			}
-		}
-		
 		//Create Hitbox
-		if meleeAttack = true {
-			if !instance_exists(obj_player_slash_hitbox) {
-				if scr_animate_until(3) {
-					slashBoxInst = instance_create_depth(x,y,global.depth_1,obj_player_slash_hitbox);
-				}
-			}
-		} else {
-			if instance_exists(obj_player_slash_hitbox) {
-				slashBoxInst.destroy = true;
+		if empAttack = true {
+			if scr_animate_until(3) {
+				empBoxInst = instance_create_depth(x,y,global.depth_1,obj_player_emp_proj);
+				empAttack = false;
+				scr_reset_dmgBox();
 			}
 		}
-	} else {
-		meleeAttack = false;
 	}
+} else {
+	empAttack = false;
 }
