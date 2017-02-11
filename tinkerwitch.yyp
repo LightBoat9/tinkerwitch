@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "5a7ba959-ec20-400b-9833-d13e4936b481",
+            "Value": {
+                "id": "aaebaf70-516b-4361-b91e-11f3933ceba5",
+                "resourcePath": "sprites\\spr_manabar_bot\\spr_manabar_bot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5cc917cc-6809-4318-bea0-537e83db9136",
             "Value": {
                 "id": "1419055a-c85b-427f-bc36-677e78dc60ff",
@@ -639,6 +647,14 @@
             }
         },
         {
+            "Key": "95cd9d9b-b390-4fb9-935c-d64689b88d20",
+            "Value": {
+                "id": "42c9b22d-12c9-4ae6-9652-a3c60ac21a45",
+                "resourcePath": "sprites\\spr_metalbar_bot\\spr_metalbar_bot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "989b1ef1-80db-46ea-bac1-0c5e711fc074",
             "Value": {
                 "id": "3cdad110-ad1e-4feb-9304-c4961a73ac2d",
@@ -675,6 +691,14 @@
             "Value": {
                 "id": "fc7cc2b7-9f37-4f9b-99c9-f580c4faaba7",
                 "resourcePath": "sprites\\spr_item_missile_explosion\\spr_item_missile_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a72ed008-6234-4785-9457-7e88cc7be092",
+            "Value": {
+                "id": "d73c1843-8fd0-418d-a875-6213fdad7a68",
+                "resourcePath": "sprites\\spr_medbar_top\\spr_medbar_top.yy",
                 "resourceType": "GMSprite"
             }
         },

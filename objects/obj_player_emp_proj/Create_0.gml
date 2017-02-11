@@ -9,3 +9,6 @@ scr_move_to(mouse_x, mouse_y, 20);
 end_hsp = 0;
 end_vsp = 0;
 dest_solid = false;
+
+//Subtract Mana
+global.mana--;

@@ -17,5 +17,6 @@ else {
 //Collide with player
 if place_meeting(x,y,obj_player) {
 	//Player Collects
+	global.metal += metal_val;
 	instance_destroy();
 }
