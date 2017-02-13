@@ -23,7 +23,7 @@ if global.testing = false {
 }
 
 // Getting Hit
-if place_meeting(x,y,spr_player_emp_proj) {
+if place_meeting(x,y,obj_player_emp_proj) {
 	with (snail_inst) {
 		if stunned = true {
 			enemy_health -= .5;
@@ -32,6 +32,8 @@ if place_meeting(x,y,spr_player_emp_proj) {
 		stunned = true;
 		destroy = true;
 	}
+	empInst = instance_nearest(x,y,obj_player_emp_proj);
+	empInst.destroy = true;
 	instance_destroy();
 }
 if place_meeting(x,y,obj_item_missile) {
