@@ -10,3 +10,6 @@ skill = 1;
 
 //Destroy Event
 destroy = false
+
+//Uses Metal
+global.metal--;

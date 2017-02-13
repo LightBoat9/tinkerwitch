@@ -1,4 +1,4 @@
-/// @description scr_box_movement();
+/// @description scr_basic_movement();
 
 vsp += grav;
 

@@ -26,23 +26,27 @@ if global.item_wrench = true {
 }
 
 //EMP Attack
-if empAttack = false {
-	if global.missileAiming = false {
-		if global.item_wrench {
-			if global.mouse_left {
-				image_index = 0;
-				empAttack = true;
+if global.mana > 0 {
+	if empAttack = false {
+		if global.missileAiming = false {
+			if global.item_wrench {
+				if global.mouse_left {
+					image_index = 0;
+					empAttack = true;
+				}
 			}
 		}
 	}
 }
 
 //Create Bots
-if global.item_wrench = true {
-	if global.missileAiming = false {
-		if instance_number(obj_bot) < 8 {
-			if global.key_bots {
-				instance_create_depth(x,y,global.depth_1,obj_bot);
+if global.metal > 0 {
+	if global.item_wrench = true {
+		if global.missileAiming = false {
+			if instance_number(obj_bot) < 8 {
+				if global.key_bots {
+					instance_create_depth(x,y,global.depth_1,obj_bot);
+				}
 			}
 		}
 	}

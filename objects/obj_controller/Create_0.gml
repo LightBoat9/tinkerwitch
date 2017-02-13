@@ -26,6 +26,8 @@ global.bot_eight = false;
 //Stats
 global.metal = 0;
 global.mana = 24;
+//Sroll Wheel
+global.item_bar = 0;
 
 /* 
  * Video Options 

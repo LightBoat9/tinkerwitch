@@ -1,6 +1,8 @@
 //GUI
 display_set_gui_size(view_width,view_height);
-draw_sprite(spr_item_bar,-1,view_width/2,view_height);
+
+/* Item Bar */
+draw_sprite(spr_item_bar,global.item_bar,view_width/2,view_height);
 
 /* Healthbar */
 if (obj_player.player_health > 0) {
@@ -17,8 +19,3 @@ draw_sprite(spr_medbar_top,-1,16,view_height-64);
 manaAmount = global.mana/24;
 draw_sprite_ext(spr_manabar_bot,-1,16,view_height-32,manaAmount,1,0,c_white,1);
 draw_sprite(spr_medbar_top,-1,16,view_height-32);
-
-/* Testing */
-if instance_exists(obj_bot) {
-	draw_text(32,32,obj_bot.skill);
-}

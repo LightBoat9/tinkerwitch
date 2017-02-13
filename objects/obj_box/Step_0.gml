@@ -1,5 +1,5 @@
 //Movement
-scr_box_movement();
+scr_basic_movement();
 
 //Destroy Event
 if box_health <= 0 {
