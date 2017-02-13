@@ -1,4 +1,16 @@
 /// @desctiption scr_player_movement();
+// Movespeed Changes
+if instance_exists(obj_bot) {
+	if obj_bot.skill = 3 {
+		movespeed = 2;
+	}
+	else {
+		movespeed = 5;
+	}
+}
+else {
+		movespeed = 5;
+}
 
 //Input
 move = global.key_right - global.key_left;

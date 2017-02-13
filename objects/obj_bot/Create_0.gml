@@ -1,5 +1,3 @@
-depth = global.depth_1;
-
 //The bots ID
 bot_open = scr_bot_cycle();
 if bot_open != 0 {

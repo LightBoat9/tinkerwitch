@@ -1,5 +1,5 @@
 draw_self();
-
+draw_speed = movespeed/5;
 /* Horizontal Movement */
 var dir = global.key_left - global.key_right;
 var mouseDir = scr_mouse_dir();
@@ -8,18 +8,18 @@ if empAttack = false {
 	if global.item_wrench = true {
 		if dir != 0 {
 			if dir = -1 {
-				image_speed = 1;
+				image_speed = draw_speed;
 				sprite_index = spr_player;
 				image_xscale = 1;
 			}
 			else if dir = 1 {
-				image_speed = 1;
+				image_speed = draw_speed;
 				sprite_index = spr_player;
 				image_xscale = -1;
 			}
 		}
 		else if dir = 0 {
-			image_speed = 1;
+			image_speed = draw_speed;
 			sprite_index = spr_player;
 			image_index = 0;
 		}
@@ -28,18 +28,18 @@ if empAttack = false {
 	if global.item_wrench = false {
 		if dir != 0 {
 			if dir = -1 {
-				image_speed = 1;
+				image_speed = draw_speed;
 				sprite_index = spr_player_nowrench;
 				image_xscale = 1;
 			}
 			else if dir = 1 {
-				image_speed = 1;
+				image_speed = draw_speed;
 				sprite_index = spr_player_nowrench;
 				image_xscale = -1;
 			}
 		}
 		else if dir = 0 {
-			image_speed = 1;
+			image_speed = draw_speed;
 			sprite_index = spr_player_nowrench;
 			image_index = 0;
 		}

@@ -1,7 +1,7 @@
 //Start making metal
 if instance_exists(obj_wrench) {
-	if has_metal = true {
-		if obj_wrench.returnTimer <= 0 {
+	if obj_wrench.returnTimer = 1 {
+		if has_metal = true {
 			if place_meeting(x+1,y,obj_wrench) {
 				has_metal = false;
 				make_metal = true;

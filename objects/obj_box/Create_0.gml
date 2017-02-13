@@ -1,6 +1,3 @@
-//Depth
-depth = global.depth_3;
-
 //Movement
 hsp = 0;
 vsp = 0;

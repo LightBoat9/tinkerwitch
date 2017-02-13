@@ -18,3 +18,7 @@ manaAmount = global.mana/24;
 draw_sprite_ext(spr_manabar_bot,-1,16,view_height-32,manaAmount,1,0,c_white,1);
 draw_sprite(spr_medbar_top,-1,16,view_height-32);
 
+/* Testing */
+if instance_exists(obj_bot) {
+	draw_text(32,32,obj_bot.skill);
+}

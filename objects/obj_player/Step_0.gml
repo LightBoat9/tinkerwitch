@@ -48,6 +48,9 @@ if global.item_wrench = true {
 	}
 }
 
+//Bots Shield
+scr_shield();
+
 //Make Missile Parts
 if global.item_wrench = true {
 	if global.missileAiming = false {
@@ -63,12 +66,16 @@ if global.item_wrench = true {
 					}
 				}
 			} else {
-				obj_bot.skill = 1;
+				if !global.mouse_right {
+					obj_bot.skill = 1;
+				}
 			}
 		}
 	} else {
 		if instance_exists(obj_bot) {
-			obj_bot.skill = 1;
+			if !global.mouse_right {
+				obj_bot.skill = 1;
+			}
 		}
 	}
 }

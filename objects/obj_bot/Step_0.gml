@@ -13,3 +13,8 @@ else if skill = 2 {
 	var dir = point_direction(x,y,obj_player.x,obj_player.y);
 	motion_set(dir,5);
 }
+
+//Position in shield
+else if skill = 3 {
+	scr_shield_up();
+}

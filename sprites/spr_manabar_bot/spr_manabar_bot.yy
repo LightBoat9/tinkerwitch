@@ -1,7 +1,7 @@
 {
     "id": "5a7ba959-ec20-400b-9833-d13e4936b481",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_manabar_bot",
     "For3D": false,
     "HTile": false,

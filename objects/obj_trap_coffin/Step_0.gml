@@ -14,9 +14,8 @@ vsp += grav;
 //Horizontal Movement
 hsp_free = place_meeting(x+hsp,y,obj_solid) + place_meeting(x+hsp,y,obj_player);
 hsp_free_precise = !place_meeting(x+sign(hsp),y,obj_solid) + !place_meeting(x+sign(hsp),y,obj_player);
-if player_hit != 1 {
-	player_hit = place_meeting(x+hsp,y,obj_player);
-}
+player_hit = place_meeting(x+hsp,y,obj_player);
+
 now_hsp = hsp;
 
 if hsp_free > 0 {
@@ -42,11 +41,13 @@ if hsp_free > 0 {
 		}
 	}
 	//Hit Player
-	if player_hit {
-		obj_player.player_health -= .25;
-		obj_player.move_manip = true;
-		obj_player.hsp = now_hsp;
-		player_hit = 0;
+	if !player_hit_bool {
+		if player_hit {
+			obj_player.player_health -= .25;
+			obj_player.move_manip = true;
+			obj_player.hsp = now_hsp;
+			player_hit_bool = true;
+		}
 	}
 }
 
