@@ -12,9 +12,9 @@ global.key_down = keyboard_check(ord("S"));
 global.key_jump = keyboard_check(vk_space);
 //Items & Skills
 global.key_wrench = keyboard_check(ord("Q"));
-global.key_bots = keyboard_check(ord("F"));
-global.key_missile = keyboard_check(ord("E"));
-global.key_bot = keyboard_check(ord("R"));
+global.key_bots = keyboard_check(ord("R"));
+global.key_missile = keyboard_check(ord("F"));
+global.key_use = keyboard_check(ord("E"));
 //Item Bar
 global.item_one = keyboard_check(ord("1"));
 

@@ -23,10 +23,19 @@ Package: Your code stays the same, external library changes or asset file update
 - Bots sprite and float mechanics
 - Missile and missle creation mechanics
 - Missile collision, explosion, and particles
-- Melee attack animation
-- Melee attack hitbox
+- Basic attack animation
 - Snail enemy
 - Snail Movement
+- Healthbars
+- Basic GUI
+- Box, Particles
+- Plank Trap
+- Metal from Walls
+- Mana
+- Lava
+- Sign
+- Shield
+- Itembar
 
 ### Changed
 

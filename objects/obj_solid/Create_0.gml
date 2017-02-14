@@ -12,3 +12,5 @@ ind = tile_get_index(data); //Index of current tile
 
 //Set the metal value based on the tile
 metal_val = scr_get_tile_metal();
+
+met_lay_exists = layer_tilemap_exists("Tiles_CastleTop",til_castle);
