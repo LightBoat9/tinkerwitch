@@ -26,6 +26,7 @@ if global.item_wrench = true {
 }
 
 //EMP Attack
+global.mouse_left = mouse_check_button(mb_left);
 if global.mana > 0 {
 	if empAttack = false {
 		if global.missileAiming = false {
@@ -36,6 +37,11 @@ if global.mana > 0 {
 				}
 			}
 		}
+	}
+}
+if empAttack = true {
+	if !global.mouse_left {
+		empAttack = false;
 	}
 }
 

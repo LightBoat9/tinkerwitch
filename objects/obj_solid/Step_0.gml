@@ -1,5 +1,5 @@
 //Start making metal
-if met_lay_exists {
+if cur_tile = til_castle {
 	if instance_exists(obj_wrench) {
 		if obj_wrench.returnTimer = 1 {
 			if has_metal = true {

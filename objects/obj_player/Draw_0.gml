@@ -61,10 +61,12 @@ if empAttack = true {
 		
 		//Create Hitbox
 		if empAttack = true {
+			if scr_animate_until(2) {
+				scr_reset_dmgBox();
+			}
 			if scr_animate_until(3) {
 				empBoxInst = instance_create_depth(x,y,global.depth_1,obj_player_emp_proj);
 				empAttack = false;
-				scr_reset_dmgBox();
 			}
 		}
 	}

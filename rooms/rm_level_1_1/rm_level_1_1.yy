@@ -406,7 +406,7 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Tiles_CastleTop",
+            "name": "solid_tiles",
             "userdefined_depth": false,
             "visible": true,
             "prev_tileheight": 32,

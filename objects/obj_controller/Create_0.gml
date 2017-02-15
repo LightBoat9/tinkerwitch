@@ -23,10 +23,15 @@ global.bot_five = false;
 global.bot_six = false;
 global.bot_seven = false;
 global.bot_eight = false;
-//Stats
+//obj_player
+/* Stats */
 global.metal = 0;
 global.mana = 24;
-//Sroll Wheel
+/* Settings */
+global.autojump = true;
+
+//GUI
+/* Sroll Wheel */
 global.item_bar = 0;
 
 /* 

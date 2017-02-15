@@ -1,6 +1,13 @@
 //Change tilemap based on state of metal
+draw_self();
+if global.testing = true {
+	visible = true;
+}
+else {
+	visible = false;
+}
 if has_metal = false {
-	var lay_id = layer_get_id("Tiles_CastleTop");
+	var lay_id = layer_get_id("solid_tiles");
 	var map_id = layer_tilemap_get_id(lay_id);
 	var mx = tilemap_get_cell_x_at_pixel(map_id, x, y);
 	var my = tilemap_get_cell_y_at_pixel(map_id, x, y);

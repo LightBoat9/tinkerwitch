@@ -2,15 +2,20 @@ has_metal = true; //Whether it has metal or not
 make_metal = false; //When to make metal
 
 /* Tilemap */
-//Get the index of the current tile
-var lay_id = layer_get_id("Tiles_CastleTop");
-var map_id = layer_tilemap_get_id(lay_id);
-var mx = tilemap_get_cell_x_at_pixel(map_id, x, y);
-var my = tilemap_get_cell_y_at_pixel(map_id, x, y);
-var data = tilemap_get(map_id, mx, my);
-ind = tile_get_index(data); //Index of current tile
+//Get whether there is a til_metal layer
 
-//Set the metal value based on the tile
+//Get the index of the current tile
+now_lay_id = layer_get_id("solid_tiles");
+now_map_id = layer_tilemap_get_id(now_lay_id);
+now_x = tilemap_get_cell_x_at_pixel(now_map_id, x, y);
+now_y = tilemap_get_cell_y_at_pixel(now_map_id, x, y);
+tm = tilemap_get(now_map_id, now_x, now_y);
+ind = tile_get_index(tm); //Index of current tile
+
+//Set the metal value based on the tile index
 metal_val = scr_get_tile_metal();
 
-met_lay_exists = layer_tilemap_exists("Tiles_CastleTop",til_castle);
+//Current Tile
+til_id = layer_tilemap_get_id("solid_tiles")
+cur_tile = tilemap_get_tileset(til_id);
+

@@ -33,6 +33,11 @@ vsp += grav;
 if move_manip = false {
 	if place_meeting(x,y+1,obj_solid) {
 		vsp = global.key_jump * -jumpspeed;
+		if global.autojump {
+			if place_meeting(x+sign(hsp),y,obj_solid) {
+				vsp = -jumpspeed;
+			}
+		}
 	}
 }
 

@@ -19,7 +19,7 @@ Package: Your code stays the same, external library changes or asset file update
 - Wrench sprite & throw mechanics
 - View Options
 - User Inputs
-- Castle Tile Set
+- Castle Tileset
 - Bots sprite and float mechanics
 - Missile and missle creation mechanics
 - Missile collision, explosion, and particles
@@ -36,6 +36,10 @@ Package: Your code stays the same, external library changes or asset file update
 - Sign
 - Shield
 - Itembar
+- Gate
+- Autojump
+- Plains Tileset
+- Level 1 : 1
 
 ### Changed
 
