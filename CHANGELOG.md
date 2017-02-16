@@ -40,6 +40,7 @@ Package: Your code stays the same, external library changes or asset file update
 - Autojump
 - Plains Tileset
 - Level 1 : 1
+- Level 1 : 2
 
 ### Changed
 

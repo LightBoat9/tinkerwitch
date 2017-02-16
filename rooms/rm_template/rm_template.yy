@@ -7515,7 +7515,7 @@
             },
             "hspeed": 0,
             "htiled": true,
-            "spriteId": "9d06db78-31aa-4665-aed5-d25f532a08a1",
+            "spriteId": "00000000-0000-0000-0000-000000000000",
             "stretch": false,
             "userdefined_animFPS": false,
             "vspeed": 0,

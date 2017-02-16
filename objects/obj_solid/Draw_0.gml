@@ -1,11 +1,4 @@
 //Change tilemap based on state of metal
-draw_self();
-if global.testing = true {
-	visible = true;
-}
-else {
-	visible = false;
-}
 if has_metal = false {
 	var lay_id = layer_get_id("solid_tiles");
 	var map_id = layer_tilemap_get_id(lay_id);
@@ -16,3 +9,6 @@ if has_metal = false {
 	data = tile_set_index(data, 14);
 	tilemap_set(map_id,data,mx,my);
 }
+
+//DELETE
+draw_self();
