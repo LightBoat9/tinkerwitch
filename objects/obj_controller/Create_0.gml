@@ -27,6 +27,7 @@ global.bot_eight = false;
 /* Stats */
 global.metal = 0;
 global.mana = 24;
+global.charge = 0;
 /* Settings */
 global.autojump = true;
 

@@ -20,5 +20,12 @@ manaAmount = global.mana/24;
 draw_sprite_ext(spr_manabar_bot,-1,16,view_height-32,manaAmount,1,0,c_white,1);
 draw_sprite(spr_medbar_top,-1,16,view_height-32);
 
+/* Charge Bar */
+draw_sprite(spr_charge,-1,view_width-144,16);
+draw_sprite(spr_charge_num,floor(global.charge/1000),view_width-144,16);
+draw_sprite(spr_charge_num,floor(global.charge/100),view_width-111,16);
+draw_sprite(spr_charge_num,floor(global.charge/10),view_width-78,16);
+draw_sprite(spr_charge_num,global.charge%10,view_width-45,16);
+
 /* Testing */
-draw_text(room_width/2,room_height/2,string(obj_solid.cur_tile));
+draw_text(view_width/2,view_height/2,1);
