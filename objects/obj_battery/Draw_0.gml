@@ -10,11 +10,12 @@ else {
 	instance_destroy();
 }
 
-if value = 0 {
-	image_index = spr_battery_red;
+if value = 1 {
+	sprite_index = spr_battery_red;
 }
 else if value = 2 {
-
+	sprite_index = spr_battery_blue;
 }
-else if value = 3 {
+else if value = 10 {
+	sprite_index = spr_battery_gold;
 }
