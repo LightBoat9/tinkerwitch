@@ -15,8 +15,25 @@ if box_health <= 0 {
 			instance_create_depth(x+8,y+8,global.depth_1,obj_box_part);
 		}
 	}
+	//Value of battery if that is the object
+	if drop_item = obj_battery {
+		ran = irandom(2);
+		if ran = 0 {
+			var value = 1;
+		}
+		else if ran = 1 {
+			var value = 2;
+		}
+		else if ran = 2 {
+			var value = 10;
+		}
+	}
 	//Drop Item
-	instance_create_depth(x+8,y+8,global.depth_1,drop_item);
+	drop = instance_create_depth(x+8,y+8,global.depth_1,drop_item);
+	if drop_item = obj_battery {
+		drop.value = value;
+	}
+	//Destroy
 	instance_destroy();
 }
 

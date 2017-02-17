@@ -9,15 +9,19 @@ if !instance_exists(obj_controller) {
 }
 
 //Movement
-vsp = 0;
-hsp = 0;
-grav = 1;
-jumpspeed = 13.5;
-movespeed = 5;
+vsp = 0; // Vertical Speed
+hsp = 0; //Horizontal Speed
+grav = 1; //Gravity
+jumpspeed = 13.5; //Jump "height"
+movespeed = 5; //Horizontal movement
+grounded = false; //Whether on ground or not
 
 //Items
-global.item_wrench = true;
-missileParts = 0;
+global.item_wrench = true; // Whether the player has the wrench or not
+missileParts = 0; //The amount of parts for the missile the player has
+
+//Shield
+shield_health = 1;
 
 //Attacking
 empAttack = false;

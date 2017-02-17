@@ -73,3 +73,16 @@ if empAttack = true {
 } else {
 	empAttack = false;
 }
+
+//Destroy bots if shield breaks
+if shield_health <= 0 {
+	if instance_exists(obj_bot) {
+		obj_bot.destroy = true;
+		shield_health = 1;
+	}
+}
+//Draw Shield Bar
+if shield_health < 1 {
+	draw_sprite(spr_bar_top,-1,x-16,y-48);
+	draw_sprite_ext(spr_shield_bar_bot,-1,x-16,y-48,shield_health,1,0,c_white,1);
+}

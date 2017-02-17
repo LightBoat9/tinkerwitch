@@ -1,15 +1,16 @@
 draw_self();
-if image_xscale != 0 && image_yscale != 0 {
-	if collected {
-		image_xscale-=.1;
-		image_yscale-=.1;
+if image_xscale != 0 && image_yscale != 0 { //If the image is not resized to be invisible
+	if collected { //If the player has interacted
+		image_xscale-=.1; //Reduce size
+		image_yscale-=.1; //Reduce size
 	}
 }
 else {
-	global.charge += value;
-	instance_destroy();
+	global.charge += value; //Add the charge currency
+	instance_destroy(); //Destroy
 }
 
+//Draw Based on currency/value amount
 if value = 1 {
 	sprite_index = spr_battery_red;
 }

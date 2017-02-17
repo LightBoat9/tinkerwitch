@@ -11,7 +11,7 @@
         "181c176b-3b58-4b22-afc4-c2f9a9286d6b"
     ],
     "filterType": "GMScript",
-    "folderName": "Bot",
+    "folderName": "Bots",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

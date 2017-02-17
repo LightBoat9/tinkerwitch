@@ -2,6 +2,14 @@
 /**********************************************************
  * Movespeed Changes
  **********************************************************/
+//Whether the player is meeting solid ground (For use from other objects only)
+if place_meeting(x,y+1,obj_solid) {
+	grounded = true;
+}
+else {
+	grounded = false;
+}
+
 //Shield Up
 if instance_exists(obj_bot) {
 	if obj_bot.skill = 3 || obj_bot.skill = 2 {
@@ -31,11 +39,11 @@ vsp += grav;
 
 //Jumping
 if move_manip = false {
-	if place_meeting(x,y+1,obj_solid) {
-		vsp = global.key_jump * -jumpspeed;
-		if global.autojump {
-			if place_meeting(x+sign(hsp),y,obj_solid) {
-				vsp = -jumpspeed;
+	if place_meeting(x,y+1,obj_solid) { //If grounded
+		vsp = global.key_jump * -jumpspeed; //Jump based on input
+		if global.autojump { //Autojumping at walls
+			if place_meeting(x+sign(hsp),y,obj_solid) { //Meeting the wall while walking
+				vsp = -jumpspeed; //Jump
 			}
 		}
 	}

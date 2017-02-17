@@ -22,7 +22,7 @@ if fired = false {
 //While in air
 if fired = true {
 	//Move towards target
-	scr_move_collisions(obj_solid,hsp,vsp);
+	scr_missile_collisions(obj_solid,hsp,vsp);
 	//Create engine particles
 	if global.particles = true {
 		repeat(5) {

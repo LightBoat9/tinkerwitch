@@ -28,4 +28,4 @@ draw_sprite(spr_charge_num,floor(global.charge/10),view_width-78,16);
 draw_sprite(spr_charge_num,global.charge%10,view_width-45,16);
 
 /* Testing */
-draw_text(view_width/2,view_height/2,cur_room);
+//draw_text(view_width/2,view_height/2,cur_room);

@@ -29,6 +29,7 @@ if instance_exists(obj_bot) {
 			}
 			scr_snail_dir_switch();
 			hsp = 0;
+			obj_player.shield_health -= .25;
 		}
 
 		if place_meeting(x,y+vsp,obj_bot) {
