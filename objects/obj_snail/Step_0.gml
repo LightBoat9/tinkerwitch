@@ -88,5 +88,7 @@ if enemy_health <= 0 {
 	death_anim.hsp = hsp;
 	death_anim.vsp = vsp;
 	death_anim.dir = dir;
+	drop = instance_create_depth(x,y-9,global.depth_1,obj_battery);
+	drop.value = 1;
 	instance_destroy();
 }

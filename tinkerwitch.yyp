@@ -258,7 +258,7 @@
             "Key": "26c69476-4853-4444-977e-73591b781ad1",
             "Value": {
                 "id": "215e15f3-a619-4953-8fea-2b4211891629",
-                "resourcePath": "sprites\\spr_gate\\spr_gate.yy",
+                "resourcePath": "sprites\\spr_castle_gate\\spr_castle_gate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -306,7 +306,7 @@
             "Key": "344f6ddc-2023-4100-a26f-a539bb459554",
             "Value": {
                 "id": "575d6b3c-8b50-43c6-907a-35317c1d8654",
-                "resourcePath": "objects\\obj_gate\\obj_gate.yy",
+                "resourcePath": "objects\\obj_casle_gate\\obj_casle_gate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -460,6 +460,14 @@
                 "id": "cdec18ff-cd4e-4d85-9905-ebc9879364ae",
                 "resourcePath": "views\\589b847e-27a7-47ba-9d41-014de8d9d765.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "589c6282-b388-47ea-b789-125f37e693c7",
+            "Value": {
+                "id": "c4d0d62d-623a-4060-b17e-9824935887a0",
+                "resourcePath": "sprites\\spr_castle_gate_active\\spr_castle_gate_active.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

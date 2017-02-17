@@ -1,7 +1,7 @@
 {
     "id": "c618f735-d01e-4187-b9b6-cf8c227ade67",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_shield_bar_bot",
     "For3D": false,
     "HTile": false,

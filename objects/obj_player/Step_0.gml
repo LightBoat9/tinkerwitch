@@ -60,6 +60,21 @@ if global.metal > 0 {
 
 //Bots Shield
 scr_shield();
+//Repair shield
+if shield_health < 1 {
+	if instance_exists(obj_bot) {
+		if obj_bot.skill != 3 {
+			shield_health += .01;
+		}
+	}
+	else {
+		shield_health += .01;
+	}
+}
+//Keeps shield_health from going under 0
+if shield_health < 0 {
+	shield_health = 0;
+}
 
 //Make Missile Parts
 if global.item_wrench = true {

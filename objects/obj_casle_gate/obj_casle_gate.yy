@@ -2,7 +2,7 @@
     "id": "344f6ddc-2023-4100-a26f-a539bb459554",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_gate",
+    "name": "obj_casle_gate",
     "eventList": [
         {
             "id": "b657587b-bbb8-4218-b57d-cca8ee92f630",

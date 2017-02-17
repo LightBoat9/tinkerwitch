@@ -12,7 +12,7 @@
 
 ## [Might Happen]
 - Snail Boss
-- Player lives (Chances before room reset)
+- Player lives (Chances before room level)
 
 ---
 
