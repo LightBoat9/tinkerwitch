@@ -1,7 +1,14 @@
 /// @description Global Variables
 
+//Persistent
+persistent = true;
+
 //Fullscreen
 window_set_fullscreen(true);
+
+//Rooms
+cur_room = room_get_name(room);
+prev_room = room_get_name(room);
 
 //Depth
 global.depth_0 = 0;

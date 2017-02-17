@@ -1,7 +1,7 @@
 {
     "id": "3e0a4a47-d8bf-4079-8fa5-906b60a74ee7",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_battery_blue",
     "For3D": false,
     "HTile": false,

@@ -1,7 +1,7 @@
 {
     "id": "da2b0f2c-50b0-4a30-9518-565ab135784e",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_battery_gold",
     "For3D": false,
     "HTile": false,

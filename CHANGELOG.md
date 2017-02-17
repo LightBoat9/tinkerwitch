@@ -41,6 +41,9 @@ Package: Your code stays the same, external library changes or asset file update
 - Plains Tileset
 - Level 1 : 1
 - Level 1 : 2
+- Level 1 : 3
+- Battery / Charge (Currency)
+- Charge GUI
 
 ### Changed
 
