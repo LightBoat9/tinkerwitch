@@ -1,7 +1,7 @@
 {
     "id": "589c6282-b388-47ea-b789-125f37e693c7",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_castle_gate_active",
     "For3D": false,
     "HTile": false,

@@ -14,6 +14,7 @@ rolling = false;
 
 //Stun
 stunned = false;
+stun_timer = room_speed;
 
 //Damage Box
 inst_dmgBox = instance_create_depth(x,y,global.depth_2,obj_snail_dmgBox)

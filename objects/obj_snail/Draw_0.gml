@@ -1,4 +1,7 @@
 draw_self();
+//Set mask
+mask_index = spr_snail;
+
 //Draw Healthbar
 if !(enemy_health <= 0) {
 	draw_sprite(spr_bar_top,-1,x-16,y-24);

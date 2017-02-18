@@ -5,12 +5,6 @@ if stunned = false {
 	}
 }
 
-/* Direction */
-//Switch Direction At Walls
-if place_meeting(x+hsp,y,obj_solid) {
-	scr_snail_dir_switch();
-}
-
 //Change horizontal speed based on direction
 if stunned = false {
 	switch (dir) {
@@ -33,17 +27,30 @@ if stunned = false {
 	}
 }
 
+/* Direction */
+//Switch Direction At Walls
+if place_meeting(x+hsp,y,obj_solid) {
+	scr_snail_dir_switch();
+}
+
 //Stunned
 if stunned = true {
-	if hsp != 0 {
-		if dir = 0 {
-			hsp -= .5;
-		}
-		if dir = 1 {
-			hsp += .5;
-		}
-	} else {
+	if stun_timer <= 0 {
 		stunned = false;
+		stun_timer = room_speed;
+	}
+	else {
+		//Decrease timer
+		stun_timer--;
+		//Slowly slide
+		if hsp != 0 {
+			if dir = 0 {
+				hsp -= .5;
+			}
+			if dir = 1 {
+				hsp += .5;
+			}
+		} 
 	}
 }
 
