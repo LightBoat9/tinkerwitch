@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "46446f21-1397-4446-86ae-ef8a41934374",
+            "Value": {
+                "id": "658069fd-42d0-47ea-8b74-5d6b4dcb4849",
+                "resourcePath": "views\\46446f21-1397-4446-86ae-ef8a41934374.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "47d39f18-1201-4144-a8c7-02760e254a89",
             "Value": {
                 "id": "d27a966e-44f2-4a2f-9383-ffc4fc93a607",
@@ -1271,6 +1279,14 @@
             }
         },
         {
+            "Key": "e7a033b2-ebbd-416c-a27a-e317c7e24252",
+            "Value": {
+                "id": "05d06b27-e466-4423-80fa-b489a4f77dd7",
+                "resourcePath": "objects\\obj_caslte_torch\\obj_caslte_torch.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e7b7a1d6-4866-4eac-b461-c53c9dd20f83",
             "Value": {
                 "id": "c10b8201-794b-4038-9007-708871fe826d",
@@ -1451,6 +1467,14 @@
             "Value": {
                 "id": "f47dda59-b266-4a93-b325-7e358ccc4795",
                 "resourcePath": "sprites\\spr_item_missile_part\\spr_item_missile_part.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ffb3049d-c727-450d-b58a-2c156c1eb62d",
+            "Value": {
+                "id": "72730c1d-b455-4842-a509-a21a52e502f6",
+                "resourcePath": "sprites\\spr_castle_torch\\spr_castle_torch.yy",
                 "resourceType": "GMSprite"
             }
         }

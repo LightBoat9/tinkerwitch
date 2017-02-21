@@ -1,12 +1,14 @@
 //While aiming the missile
 if fired = false {
-	if global.missileAiming = true {
+	if global.missileAiming {
 		if global.key_missile {
 			dir = point_direction(x,y,mouse_x,mouse_y);
 			image_angle = dir;	
 			//Match player movement
 			x += obj_player.hsp;
 			y += obj_player.vsp;
+			x = obj_player.x;
+			y = obj_player.y;
 		} else {
 			global.missileAiming = false;
 		}

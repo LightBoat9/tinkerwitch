@@ -191,6 +191,8 @@ if item_obj != 0 {
 
 //Death Event
 if player_health <= 0 {
+	global.missileAiming = false;
+	global.item_wrench = true;
 	player_health = 1;
 	room_restart();
 }

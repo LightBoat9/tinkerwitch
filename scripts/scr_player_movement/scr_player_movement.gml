@@ -10,18 +10,18 @@ else {
 	grounded = false;
 }
 
+//EMP Attack
+if global.mouse_left {
+	movespeed = 2;
+}
 //Shield Up
-if instance_exists(obj_bot) {
+else if instance_exists(obj_bot) {
 	if obj_bot.skill = 3 || obj_bot.skill = 2 {
 		movespeed = 2;
 	}
 	else {
 		movespeed = 5;
 	}
-}
-//EMP Attack
-if global.mouse_left {
-	movespeed = 2;
 }
 else {
 	movespeed = 5;
