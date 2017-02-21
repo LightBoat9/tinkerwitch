@@ -37,3 +37,7 @@ mm_timer = room_speed / 2;
 
 //Health
 player_health = 1;
+
+//Mana
+mana_timer = room_speed * 4;
+mana_charge = false;

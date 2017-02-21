@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "af4baf3c-8de6-40d2-9b1d-faa6075b8aa9",
+            "Value": {
+                "id": "5dc679ff-3cb2-4f65-9cd1-d78cc372c91a",
+                "resourcePath": "rooms\\rm_level_1_5\\rm_level_1_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b2ed06a6-3973-4964-9fbc-b50a1281ed1b",
             "Value": {
                 "id": "028cd16e-aea5-47f2-be3c-5f465f9cc129",
@@ -1052,6 +1060,14 @@
                 "id": "3cdc2a1a-155d-45f9-ad77-94997d4f2906",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ccc70148-d215-472c-9782-7ec16afdad98",
+            "Value": {
+                "id": "1933b843-e5d5-4a1b-8049-02f40f7b38a8",
+                "resourcePath": "sprites\\spr_player_mana_charge\\spr_player_mana_charge.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

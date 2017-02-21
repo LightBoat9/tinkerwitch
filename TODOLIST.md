@@ -4,9 +4,9 @@
 
 ## [Will Happen]
 
-- Add damage system to the shield
 - Add save game
 - Add more detail to the plains / index
+- Different portal sprites for different levels
 
 ---
 

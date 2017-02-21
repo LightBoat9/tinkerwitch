@@ -67,3 +67,71 @@ if vsp_free > 0 {
 
 y += vsp;
 
+// Bounce off of shield
+if instance_exists(obj_bot) {
+	if obj_bot.skill = 3 {
+		if place_meeting(x+hsp,y,obj_bot) {
+			while !place_meeting(x+sign(hsp),y,obj_bot) {
+				x += sign(hsp);
+			}
+			//Damage Shield
+			obj_player.shield_health -= 1;
+			
+			//Bounce off and add gravity
+			hsp = 0;
+			grav = 1;
+			movespeed = 3;
+			
+			//Push player back
+			obj_player.move_manip = true;
+			obj_player.hsp = now_hsp / 6;
+			player_hit_bool = true;
+			
+			//Switch direction
+			if hit_obj = false {
+				switch (dir) {
+					case 0:
+						dir = 1;
+						hit_obj = true;
+						break;
+					case 1:
+						dir = 0;
+						hit_obj = true;
+						break;
+				}
+			}
+		}
+		else if place_meeting(x,y+vsp,obj_bot) {
+			while !place_meeting(x,y+sign(vsp),obj_bot) {
+				y += sign(vsp);
+			}
+			//Damage Shield
+			obj_player.shield_health -= 1;
+			
+			//Bounce off and add gravity
+			hsp = 0;
+			grav = 1;
+			movespeed = 3;
+			
+			//Push player back
+			obj_player.move_manip = true;
+			obj_player.hsp = now_hsp / 6;
+			player_hit_bool = true;
+			
+			//Switch direction
+			if hit_obj = false {
+				switch (dir) {
+					case 0:
+						dir = 1;
+						hit_obj = true;
+						break;
+					case 1:
+						dir = 0;
+						hit_obj = true;
+						break;
+				}
+			}
+		}
+	}
+}
+

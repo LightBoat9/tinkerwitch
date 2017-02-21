@@ -13,6 +13,47 @@ if move_manip = true {
 //Movement
 scr_player_movement();
 
+//Charge Mana Faster
+global.mouse_left = mouse_check_button(mb_left);
+if global.mana < 24 {
+	if hsp = 0 {
+		if !global.mouse_left {
+			if global.key_down {
+				mana_charge = true;
+				//Set the timer to lower
+				if mana_timer > (room_speed / 2) {
+					mana_timer = room_speed / 2;
+				}
+			} else {
+				mana_charge = false;
+			}
+		} else {
+			mana_charge = false;
+		}
+	} else {
+		mana_charge = false;
+	}
+
+	//Charge Over Time
+	if mana_timer <= 0 {
+		global.mana++;
+	
+		//Reset timer if not charging
+		if !mana_charge {
+			mana_timer = room_speed * 4;
+		}
+		else { //If is charging set timer to faster
+			mana_timer = room_speed / 2;
+		}
+	} else {
+		mana_timer--;
+	}
+}
+else { //Reset
+	mana_charge = false;
+	mana_timer = room_speed * 4;
+}
+
 //Throw Wrench
 if global.item_wrench = true {
 	if empAttack = false {
@@ -71,6 +112,7 @@ if shield_health < 1 {
 		shield_health += .01;
 	}
 }
+
 //Keeps shield_health from going under 0
 if shield_health < 0 {
 	shield_health = 0;
@@ -107,6 +149,7 @@ if global.item_wrench = true {
 
 //Create Missile
 if missileParts >= 8 {
+	scr_reset_dmgBox();
 	instance_create_depth(x,y,global.depth_0,obj_item_missile);
 	missileParts = 0;
 }

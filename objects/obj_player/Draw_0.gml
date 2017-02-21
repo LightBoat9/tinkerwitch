@@ -3,75 +3,87 @@ draw_speed = movespeed/5;
 /* Horizontal Movement */
 var dir = global.key_left - global.key_right;
 var mouseDir = scr_mouse_dir();
-if empAttack = false {
-	//With wrench
-	if global.item_wrench = true {
-		if dir != 0 {
-			if dir = -1 {
-				image_speed = draw_speed;
-				sprite_index = spr_player;
-				image_xscale = 1;
+if !mana_charge {
+	if empAttack = false {
+		//With wrench
+		if global.item_wrench = true {
+			if dir != 0 {
+				if dir = -1 {
+					image_speed = draw_speed;
+					sprite_index = spr_player;
+					image_xscale = 1;
+				}
+				else if dir = 1 {
+					image_speed = draw_speed;
+					sprite_index = spr_player;
+					image_xscale = -1;
+				}
 			}
-			else if dir = 1 {
+			else if dir = 0 {
 				image_speed = draw_speed;
 				sprite_index = spr_player;
-				image_xscale = -1;
+				image_index = 0;
 			}
 		}
-		else if dir = 0 {
-			image_speed = draw_speed;
-			sprite_index = spr_player;
-			image_index = 0;
+		//Without Wrench
+		if global.item_wrench = false {
+			if dir != 0 {
+				if dir = -1 {
+					image_speed = draw_speed;
+					sprite_index = spr_player_nowrench;
+					image_xscale = 1;
+				}
+				else if dir = 1 {
+					image_speed = draw_speed;
+					sprite_index = spr_player_nowrench;
+					image_xscale = -1;
+				}
+			}
+			else if dir = 0 {
+				image_speed = draw_speed;
+				sprite_index = spr_player_nowrench;
+				image_index = 0;
+			}
 		}
 	}
-	//Without Wrench
-	if global.item_wrench = false {
-		if dir != 0 {
-			if dir = -1 {
-				image_speed = draw_speed;
-				sprite_index = spr_player_nowrench;
+	if empAttack = true {
+		//Attack Animation
+		if global.item_wrench = true {
+			if mouseDir = 1 {
+				image_speed = 0.3;
+				sprite_index = spr_player_emp;
 				image_xscale = 1;
 			}
-			else if dir = 1 {
-				image_speed = draw_speed;
-				sprite_index = spr_player_nowrench;
+			else if mouseDir = -1 {
+				image_speed = 0.3;
+				sprite_index = spr_player_emp;
 				image_xscale = -1;
 			}
+		
+			//Create Hitbox
+			if empAttack = true {
+				if scr_animate_until(2) {
+					scr_reset_dmgBox();
+				}
+				if scr_animate_until(3) {
+					empBoxInst = instance_create_depth(x,y,global.depth_1,obj_player_emp_proj);
+					empAttack = false;
+				}
+			}
 		}
-		else if dir = 0 {
-			image_speed = draw_speed;
-			sprite_index = spr_player_nowrench;
-			image_index = 0;
-		}
+	} else {
+		empAttack = false;
 	}
 }
-if empAttack = true {
-	//Attack Animation
-	if global.item_wrench = true {
-		if mouseDir = 1 {
-			image_speed = 0.3;
-			sprite_index = spr_player_emp;
-			image_xscale = 1;
-		}
-		else if mouseDir = -1 {
-			image_speed = 0.3;
-			sprite_index = spr_player_emp;
-			image_xscale = -1;
-		}
-		
-		//Create Hitbox
-		if empAttack = true {
-			if scr_animate_until(2) {
-				scr_reset_dmgBox();
-			}
-			if scr_animate_until(3) {
-				empBoxInst = instance_create_depth(x,y,global.depth_1,obj_player_emp_proj);
-				empAttack = false;
-			}
-		}
+else { //Draw mana charging animation
+	image_speed = .75;
+	sprite_index = spr_player_mana_charge;
+	if dir = -1 {
+		image_xscale = 1;
 	}
-} else {
-	empAttack = false;
+	else if dir = 1 {
+		image_xscale = -1;
+	}
 }
 
 //Destroy bots if shield breaks

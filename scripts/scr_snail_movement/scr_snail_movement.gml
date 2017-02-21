@@ -27,16 +27,31 @@ if instance_exists(obj_bot) {
 			while !place_meeting(x+sign(hsp),y,obj_bot) {
 				x += sign(hsp);
 			}
+			//Switch Direction
 			scr_snail_dir_switch();
+			
+			//Stop
 			hsp = 0;
-			obj_player.shield_health -= .25;
+			
+			if stunned = false { //Stops multiple damages from happening
+				//Damage Shield
+				obj_player.shield_health -= .25;
+			}
 		}
-
-		if place_meeting(x,y+vsp,obj_bot) {
+		else if place_meeting(x,y+vsp,obj_bot) {
 			while !place_meeting(x,y+sign(vsp),obj_bot) {
 				y += sign(vsp);
 			}
-			vsp = 0;
+			//Switch Direction
+			scr_snail_dir_switch();
+			
+			//Stop
+			hsp = 0;
+			
+			if stunned = false { //Stops multiple damages from happening
+				//Damage Shield
+				obj_player.shield_health -= .25;
+			}
 		}
 	}
 }
