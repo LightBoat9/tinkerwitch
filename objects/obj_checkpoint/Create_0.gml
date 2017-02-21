@@ -1,3 +1,6 @@
+//Persistents
+persistent = true;
+
 //Movement
 hsp = 0;
 vsp = 0;

@@ -10,6 +10,10 @@ if place_meeting(x,y,obj_player) {
 
 //After activated
 if port = true {
+	//Removes checkpoints from room
+	if instance_exists(obj_checkpoint) {
+				obj_checkpoint.destroy = true;
+	}
 	obj_player.vsp -= 2; //Lift the player up
 	obj_player.hsp = 0; //Stop the players horizontal movement
 	if obj_player.y < y+46 { //Once the player gets to the middle of the portal teleport

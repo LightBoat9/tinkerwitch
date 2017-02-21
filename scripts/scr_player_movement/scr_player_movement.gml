@@ -20,7 +20,7 @@ if instance_exists(obj_bot) {
 	}
 }
 //EMP Attack
-else if global.mouse_left {
+if global.mouse_left {
 	movespeed = 2;
 }
 else {

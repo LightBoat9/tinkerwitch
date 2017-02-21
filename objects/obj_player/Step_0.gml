@@ -9,6 +9,9 @@ if move_manip = true {
 		mm_timer--;
 	}
 }
+else {
+	mm_timer = room_speed / 2;
+}
 
 //Movement
 scr_player_movement();
@@ -159,34 +162,28 @@ item_obj = scr_gui_item_obj();
 	//Make Item Parts
 if item_obj != 0 {
 	if global.item_wrench = true {
-		if global.missileAiming = false {
-			if instance_exists(obj_bot) {
-				if global.key_item {
-					obj_bot.skill = 2;
-					if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
-						if item_parts < 8 {
-							with (instance_nearest(x,y,obj_bot)) {
-								destroy = true;
-							}
-							item_parts++;
+		if instance_exists(obj_bot) {
+			if global.key_item {
+				obj_bot.skill = 2;
+				if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
+					if item_parts < 8 {
+						with (instance_nearest(x,y,obj_bot)) {
+							destroy = true;
 						}
+						item_parts++;
 					}
-				} else {
-					if !global.item_one {
-						obj_bot.skill = 1;
-					}
-				}
-			}
-		} else {
-			if instance_exists(obj_bot) {
-				if !global.item_one {
-					obj_bot.skill = 1;
 				}
 			}
 		}
 	}
 	//Create Item
 	if item_parts >= 8 {
+		//Destroy existsing checkpoints
+		if item_obj = obj_checkpoint {
+			if instance_exists(obj_checkpoint) {
+				obj_checkpoint.destroy = true;
+			}
+		}
 		instance_create_depth(x,y,global.depth_0,item_obj);
 		item_parts = 0;
 	}
