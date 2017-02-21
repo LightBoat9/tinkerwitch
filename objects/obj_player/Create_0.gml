@@ -41,3 +41,6 @@ player_health = 1;
 //Mana
 mana_timer = room_speed * 4;
 mana_charge = false;
+
+//Items
+item_parts = 0;

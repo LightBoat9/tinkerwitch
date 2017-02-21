@@ -1,7 +1,7 @@
 {
     "id": "ccc70148-d215-472c-9782-7ec16afdad98",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_player_mana_charge",
     "For3D": false,
     "HTile": false,

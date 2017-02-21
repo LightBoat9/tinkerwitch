@@ -41,6 +41,12 @@ global.autojump = true;
 //GUI
 /* Sroll Wheel */
 global.item_bar = 0;
+/* Item Bar Objects */
+global.item_one_obj = obj_checkpoint;
+global.item_two_obj = obj_checkpoint;
+global.item_three_obj = obj_checkpoint;
+global.item_four_obj = obj_checkpoint;
+global.item_five_obj = obj_checkpoint;
 
 /* 
  * Video Options 

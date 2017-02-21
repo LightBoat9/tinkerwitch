@@ -112,7 +112,6 @@ if shield_health < 1 {
 		shield_health += .01;
 	}
 }
-
 //Keeps shield_health from going under 0
 if shield_health < 0 {
 	shield_health = 0;
@@ -152,6 +151,45 @@ if missileParts >= 8 {
 	scr_reset_dmgBox();
 	instance_create_depth(x,y,global.depth_0,obj_item_missile);
 	missileParts = 0;
+}
+
+
+//Choose Item Based On Bar
+item_obj = scr_gui_item_obj();
+	//Make Item Parts
+if item_obj != 0 {
+	if global.item_wrench = true {
+		if global.missileAiming = false {
+			if instance_exists(obj_bot) {
+				if global.key_item {
+					obj_bot.skill = 2;
+					if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
+						if item_parts < 8 {
+							with (instance_nearest(x,y,obj_bot)) {
+								destroy = true;
+							}
+							item_parts++;
+						}
+					}
+				} else {
+					if !global.item_one {
+						obj_bot.skill = 1;
+					}
+				}
+			}
+		} else {
+			if instance_exists(obj_bot) {
+				if !global.item_one {
+					obj_bot.skill = 1;
+				}
+			}
+		}
+	}
+	//Create Item
+	if item_parts >= 8 {
+		instance_create_depth(x,y,global.depth_0,item_obj);
+		item_parts = 0;
+	}
 }
 
 //Death Event
