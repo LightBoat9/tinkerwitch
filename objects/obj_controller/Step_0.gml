@@ -13,9 +13,10 @@ global.key_jump = keyboard_check(vk_space);
 //Items & Skills
 global.key_wrench = keyboard_check(ord("Q"));
 global.key_bots = keyboard_check(ord("R"));
-global.key_missile = keyboard_check(ord("F"));
+global.key_shield = keyboard_check(vk_shift);
+global.key_missile = mouse_check_button(mb_right);
 global.key_use = keyboard_check(ord("E"));
-global.key_item = keyboard_check(ord("Z"));
+global.key_item = keyboard_check(vk_control);
 //Item Bar
 global.item_one = keyboard_check(ord("1"));
 global.item_two = keyboard_check(ord("2"));
@@ -25,7 +26,6 @@ global.item_five = keyboard_check(ord("5"));
 
 /* Mouse Bindings */
 global.mouse_left = mouse_check_button(mb_left);
-global.mouse_right = mouse_check_button(mb_right);
 
 /* Backgrounds */
 /* COMMENTED OUT CODE FOR MOVING BACKGROUNDS 

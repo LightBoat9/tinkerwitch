@@ -43,10 +43,10 @@ global.autojump = true;
 global.item_bar = 0;
 /* Item Bar Objects */
 global.item_one_obj = obj_checkpoint;
-global.item_two_obj = obj_checkpoint;
-global.item_three_obj = obj_checkpoint;
-global.item_four_obj = obj_checkpoint;
-global.item_five_obj = obj_checkpoint;
+global.item_two_obj = 0;
+global.item_three_obj = 0;
+global.item_four_obj = 0;
+global.item_five_obj = 0;
 
 /* 
  * Video Options 

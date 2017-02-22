@@ -2,7 +2,7 @@
 
 //Puttin up Shield
 if instance_exists(obj_bot) {
-	if global.mouse_right {
+	if global.key_shield {
 		obj_bot.skill = 3;
 	} else {
 		obj_bot.skill = 1;
