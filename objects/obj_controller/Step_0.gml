@@ -1,5 +1,8 @@
 /// @description Nonconstant Variables
 
+//Fullscreen
+window_set_fullscreen(global.fullscreen);
+
 //Allow true random
 randomize();
 

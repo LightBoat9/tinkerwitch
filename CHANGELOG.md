@@ -44,6 +44,10 @@ Package: Your code stays the same, external library changes or asset file update
 - Level 1 : 3
 - Battery / Charge (Currency)
 - Charge GUI
+- Shield Health & Bar
+- Level 1 : 4
+- Mana recharge
+- Added Pause Menu
 
 ### Changed
 

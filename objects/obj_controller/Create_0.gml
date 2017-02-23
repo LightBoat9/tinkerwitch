@@ -3,8 +3,6 @@
 //Persistent
 persistent = true;
 
-//Fullscreen
-window_set_fullscreen(true);
 
 //Rooms
 cur_room = room_get_name(room);
@@ -52,6 +50,9 @@ global.item_five_obj = 0;
 /* 
  * Video Options 
  */
+ 
+//Fullscreen
+global.fullscreen = true;
 
 /* Views */
 view_width = 1280;

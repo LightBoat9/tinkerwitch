@@ -13,9 +13,8 @@ draw_set_color(c_black);
 draw_rectangle(cam_x+32,cam_y+32,cam_x+cam_w-32,cam_y+cam_h-32,false);
 draw_set_color(c_white); //Reset Color
 
-//Draw to the right of text
+//Draw Line to the right of text
 draw_rectangle(cam_x+64+(cam_w/4)+64,cam_y+32,cam_x+64+(cam_w/4)+68,cam_y+cam_h-32,false);
-
 
 //Reset Alpha
 draw_set_alpha(1);
