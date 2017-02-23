@@ -37,6 +37,7 @@ global.mana = 24;
 global.charge = 0;
 /* Settings */
 global.autojump = true;
+global.pause = false;
 
 //GUI
 /* Sroll Wheel */
@@ -50,7 +51,7 @@ global.item_five_obj = 0;
 
 /* 
  * Video Options 
-*/
+ */
 
 /* Views */
 view_width = 1280;
@@ -73,3 +74,6 @@ global.particles = true;
 
 //Testing Stuff
 global.testing = true;
+
+//Pause
+global.pause_surface = 0;

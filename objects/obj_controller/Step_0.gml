@@ -57,3 +57,12 @@ if global.item_two { global.item_bar = 1 }
 if global.item_three { global.item_bar = 2 }
 if global.item_four { global.item_bar = 3 }
 if global.item_five { global.item_bar = 4 }
+
+//Pause
+if keyboard_check_pressed(vk_escape) {
+	var width = surface_get_width(application_surface);
+    var height = surface_get_height(application_surface);
+	global.pause_surface = sprite_create_from_surface(application_surface, 0, 0, width, height, false, false, 0, 0);
+	instance_deactivate_all(false);
+	instance_create_depth(0,0,1,obj_pause);
+}

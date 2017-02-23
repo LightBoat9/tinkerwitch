@@ -2,9 +2,11 @@
 display_set_gui_size(view_width,view_height);
 
 /* Healthbar */
-if (obj_player.player_health > 0) {
-	draw_sprite_ext(spr_healthbar_bot,-1,16,16,obj_player.player_health,1,0,c_white,1);
-	draw_sprite(spr_healthbar_top,-1,16,16);
+if instance_exists(obj_player) {
+	if (obj_player.player_health > 0) {
+		draw_sprite_ext(spr_healthbar_bot,-1,16,16,obj_player.player_health,1,0,c_white,1);
+		draw_sprite(spr_healthbar_top,-1,16,16);
+	}
 }
 
 /* Metal Bar */
@@ -46,4 +48,4 @@ if global.item_five_obj != 0 {
 }
 
 /* Testing */
-draw_text(view_width/2,view_height/2,obj_player.mm_timer);
+//draw_text(view_width/2,view_height/2,obj_player.mm_timer);
