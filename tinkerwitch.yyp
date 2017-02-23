@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "0ecbc92a-78c1-4a1b-be0f-1c861e54cf5f",
+            "Value": {
+                "id": "9049578d-5532-4991-aebc-030d08676a6c",
+                "resourcePath": "fonts\\fnt_pause\\fnt_pause.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "10cf8e7c-2232-4787-9cdf-15440ba91402",
             "Value": {
                 "id": "a68afe8e-0d61-49ab-87be-ada8f24948c1",
@@ -260,6 +268,14 @@
                 "id": "658babd2-ae68-4490-9afa-052b73610cf4",
                 "resourcePath": "views\\21f219ef-bbf2-4acd-bf1a-d4eeda4639bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "22163d47-dec1-4eaa-895b-d334bc1f8f14",
+            "Value": {
+                "id": "89f06644-d5d0-4e3e-b275-cf768ea60041",
+                "resourcePath": "scripts\\scr_pause_text_variables\\scr_pause_text_variables.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1239,6 +1255,14 @@
             }
         },
         {
+            "Key": "dea83041-47d4-4c36-9831-6e5c05a724b3",
+            "Value": {
+                "id": "446c0505-6a1f-4bf4-b1e1-1fd8a6082c4e",
+                "resourcePath": "objects\\obj_pause_text\\obj_pause_text.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "debb8f50-d669-4cd5-bb9c-204b10608fbb",
             "Value": {
                 "id": "8d8940ed-7e77-439f-ac32-062ef3fe3585",
@@ -1514,7 +1538,8 @@
         "3ae1b41d-3d74-412a-9370-da9f96794d8d",
         "91285549-01c7-4905-9d2f-238f286a5ee1",
         "6dd6a32b-4a9b-4fdc-a739-b43a927be718",
-        "d043b1fc-be12-48fe-bee8-a48722e68dbf"
+        "d043b1fc-be12-48fe-bee8-a48722e68dbf",
+        "22163d47-dec1-4eaa-895b-d334bc1f8f14"
     ],
     "tutorial": ""
 }

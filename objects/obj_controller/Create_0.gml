@@ -68,7 +68,6 @@ camera_set_view_pos(cam, cam_mid_x, cam_mid_y);
 camera_set_view_size(cam, 1280, 720);
 view_set_camera(view_current, cam);
 
-
 //Particle Effects
 global.particles = true;
 

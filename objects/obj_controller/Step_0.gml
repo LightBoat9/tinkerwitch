@@ -64,5 +64,5 @@ if keyboard_check_pressed(vk_escape) {
     var height = surface_get_height(application_surface);
 	global.pause_surface = sprite_create_from_surface(application_surface, 0, 0, width, height, false, false, 0, 0);
 	instance_deactivate_all(false);
-	instance_create_depth(0,0,1,obj_pause);
+	instance_create_depth(0,0,-1,obj_pause);
 }
