@@ -1,5 +1,11 @@
 //Destroy Event
 if destroy = true {
+	//Particle Effect
+	if global.particles {
+		repeat(3) {
+			instance_create_depth(x,y,global.depth_1,obj_bot_part);
+		}
+	}
 	scr_bot_dest(bot_open);
 	instance_destroy();
 }

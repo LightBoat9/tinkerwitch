@@ -569,7 +569,8 @@
         "399320ac-2c56-43e1-956c-a0e484dd5c2f",
         "1e95ee69-a6cc-49f3-ad9d-1779e213b585",
         "9406d597-9287-41d0-8117-b5064423f244",
-        "30a7f1cb-bfce-46a9-8427-670e8e62e169"
+        "30a7f1cb-bfce-46a9-8427-670e8e62e169",
+        "e565f7e0-fd20-4782-ba55-705a10e64e76"
     ],
     "layers": [
         {
@@ -18928,7 +18929,7 @@
                     "m_serialiseFrozen": false,
                     "name": "inst_4F007A5A",
                     "x": 1680,
-                    "y": 1584,
+                    "y": 1568,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -18952,7 +18953,7 @@
                     "m_serialiseFrozen": false,
                     "name": "inst_4B14C7E6",
                     "x": 1488,
-                    "y": 1584,
+                    "y": 1568,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -19322,6 +19323,30 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_7409B9EF",
                     "objId": "7762ae7c-9462-4324-8130-0dfa57f49b9b",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "e565f7e0-fd20-4782-ba55-705a10e64e76",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_25E380C9",
+                    "x": 1280,
+                    "y": 976,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_25E380C9",
+                    "objId": "0b628107-2cde-454f-a36c-23dce3ef49c1",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1

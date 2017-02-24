@@ -73,7 +73,7 @@ view_set_camera(view_current, cam);
 global.particles = true;
 
 //Testing Stuff
-global.testing = true;
+global.testing = false;
 
 //Pause
 global.pause_surface = 0;
