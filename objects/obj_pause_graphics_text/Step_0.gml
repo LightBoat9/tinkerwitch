@@ -18,17 +18,26 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+(cam_w/4),y+boxheight) {
 					global.particles = true;
 				}
 				break;
-			case 1:
-				obj_pause.graphics = false;
-				obj_pause.select = 2; //Go back to option
-				break;
-			case 2: //Fullscreen
+			
+			case 1: //Fullscreen
 				if global.fullscreen {
 					global.fullscreen = false;
 				}
 				else {
 					global.fullscreen = true;
 				}
+				break;
+			case 2: //Dev Mode
+				if global.testing {
+					global.testing = false;
+				}
+				else {
+					global.testing = true;
+				}
+				break;
+			case 3: //Back
+				obj_pause.graphics = false;
+				obj_pause.select = 2; //Go back to option
 				break;
 		}
 	}
@@ -47,17 +56,25 @@ if obj_pause.graphic_select = (func+1) {
 					global.particles = true;
 				}
 				break;
-			case 1:
-				obj_pause.graphics = false;
-				obj_pause.select = 2; //Go back to option
-				break;
-			case 2: //Fullscreen
+			case 1: //Fullscreen
 				if global.fullscreen {
 					global.fullscreen = false;
 				}
 				else {
 					global.fullscreen = true;
 				}
+				break;
+			case 2: //Dev Mode
+				if global.testing {
+					global.testing = false;
+				}
+				else {
+					global.testing = true;
+				}
+				break;
+			case 3: //Back
+				obj_pause.graphics = false;
+				obj_pause.select = 2; //Go back to option
 				break;
 		}
 	}
@@ -78,15 +95,23 @@ switch (func) {
 			option_text = "OFF"
 		}
 		break;
-	case 1: //Back
-		option_text = "";
-		break;
-	case 2: //Fullscreen
+	case 1: //Fullscreen
 		if global.fullscreen {
 			option_text = "YES"
 		}
 		else {
 			option_text = "NO"
 		}
+		break;
+	case 2: //Dev Mode
+		if global.testing {
+			option_text = "YES";
+		}
+		else {
+			option_text = "NO";
+		}
+		break;
+	case 3: //Back
+		option_text = "";
 		break;
 }

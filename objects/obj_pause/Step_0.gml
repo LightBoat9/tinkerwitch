@@ -34,7 +34,7 @@ if !graphics {
 else {
 	select = 0;
 	instance_activate_object(obj_pause_graphics_text);
-	if keyboard_check_pressed(ord("W")) {
+	if keyboard_check_pressed(ord("S")) {
 		if graphic_select < instance_number(obj_pause_graphics_text) {
 			graphic_select++;
 		}
@@ -42,7 +42,7 @@ else {
 			graphic_select = 1;
 		}
 	}
-	if keyboard_check_pressed(ord("S")) {
+	if keyboard_check_pressed(ord("W")) {
 		if graphic_select > 1 {
 			graphic_select--;
 		}
