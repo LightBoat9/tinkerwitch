@@ -26,7 +26,8 @@ with (text_obj) {
 	/*
 	 * Function
 	 * [1] Resume Game
-	 * [2] Quit Game
+	 * [2] Options
+	 * [3] Quit Game
 	 */
 	func = argument4;
 }

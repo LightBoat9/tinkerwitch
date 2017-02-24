@@ -74,6 +74,7 @@ if obj_pause.graphic_select = (func+1) {
 				break;
 			case 3: //Back
 				obj_pause.graphics = false;
+				io_clear(); //Fix it from jumping back
 				obj_pause.select = 2; //Go back to option
 				break;
 		}

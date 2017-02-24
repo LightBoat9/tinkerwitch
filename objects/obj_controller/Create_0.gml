@@ -53,6 +53,7 @@ global.item_five_obj = 0;
  
 //Fullscreen
 global.fullscreen = true;
+window_set_fullscreen(global.fullscreen);
 
 /* Views */
 view_width = 1280;

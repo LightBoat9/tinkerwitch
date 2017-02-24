@@ -137,6 +137,7 @@
         4278231211,
         4281367321
     ],
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 200,
