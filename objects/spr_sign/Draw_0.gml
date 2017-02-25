@@ -1,4 +1,5 @@
 draw_self();
+
 if read = false { 
 	image_index = 0; //By default unread sign
 }
@@ -37,6 +38,7 @@ else if draw_txt {
 		if !instance_exists(inst_sign_text) {
 			inst_sign_text = scr_sign_text(text,2,x,y);
 		}
+		inst_sign_text.visible = true;
 		read = true;
 	}
 	else {

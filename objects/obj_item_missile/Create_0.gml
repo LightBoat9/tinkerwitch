@@ -1,3 +1,6 @@
+//Depth
+depth = global.depth_3;
+
 //Not Fired
 global.missileAiming = true;
 fired = false;

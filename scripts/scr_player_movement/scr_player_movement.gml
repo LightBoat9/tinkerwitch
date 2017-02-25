@@ -10,6 +10,28 @@ else {
 	grounded = false;
 }
 
+//Getting unstuck
+var i = 0;
+while place_meeting(x,y,obj_solid_move) {
+	if !place_meeting(x+i,y,obj_solid_move) 
+	&& !place_meeting(x+i,y,obj_solid) {
+		x = x+i;
+	}
+	else if !place_meeting(x,y+i,obj_solid_move) 
+	&& !place_meeting(x,y+i,obj_solid) {
+		y = y+i;
+	}
+	else if !place_meeting(x-i,y,obj_solid_move) 
+	&& !place_meeting(x-i,y,obj_solid){
+		x = x-i;
+	}
+	else if !place_meeting(x,y-i,obj_solid_move) 
+	&& !place_meeting(x,y-i,obj_solid) {
+		y = y-i;
+	}
+	i++;
+}
+
 //EMP Attack
 if global.mouse_left {
 	movespeed = 2;

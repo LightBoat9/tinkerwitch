@@ -1,7 +1,7 @@
 //While aiming the missile
 if fired = false {
 	if global.missileAiming {
-		if global.key_missile {
+		if global.key_item {
 			dir = point_direction(x,y,mouse_x,mouse_y);
 			image_angle = dir;	
 			//Match player movement

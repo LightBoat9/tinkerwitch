@@ -1,5 +1,8 @@
 /// @description Variables
 
+//Depth
+depth = global.depth_2;
+
 //Persistance
 persistent = true; 
 

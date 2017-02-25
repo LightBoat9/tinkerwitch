@@ -120,43 +120,6 @@ if shield_health < 0 {
 	shield_health = 0;
 }
 
-//Make Missile Parts
-if global.item_wrench = true {
-	if global.missileAiming = false {
-		if instance_exists(obj_bot) {
-			if global.key_missile {
-				obj_bot.skill = 2;
-				if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
-					if missileParts < 8 {
-						with (instance_nearest(x,y,obj_bot)) {
-							destroy = true;
-						}
-						missileParts++;
-					}
-				}
-			} else {
-				if !global.key_shield {
-					obj_bot.skill = 1;
-				}
-			}
-		}
-	} else {
-		if instance_exists(obj_bot) {
-			if !global.key_shield {
-				obj_bot.skill = 1;
-			}
-		}
-	}
-}
-
-//Create Missile
-if missileParts >= 8 {
-	scr_reset_dmgBox();
-	instance_create_depth(x,y,global.depth_0,obj_item_missile);
-	missileParts = 0;
-}
-
-
 //Choose Item Based On Bar
 item_obj = scr_gui_item_obj();
 	//Make Item Parts

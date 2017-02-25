@@ -17,9 +17,8 @@ global.key_jump = keyboard_check(vk_space);
 global.key_wrench = keyboard_check(ord("Q"));
 global.key_bots = keyboard_check(ord("R"));
 global.key_shield = keyboard_check(vk_shift);
-global.key_missile = mouse_check_button(mb_right);
 global.key_use = keyboard_check(ord("E"));
-global.key_item = keyboard_check(vk_control);
+global.key_item = mouse_check_button(mb_right);
 //Item Bar
 global.item_one = keyboard_check(ord("1"));
 global.item_two = keyboard_check(ord("2"));
@@ -41,25 +40,33 @@ layer_x(bgr_top, cam_x);
 if mouse_wheel_up() {
 	if global.item_bar != 0 {
 		global.item_bar--;
+		global.item_name_timer = room_speed * 2;
+		global.item_name_alpha = 1;
 	}
 	else {
 		global.item_bar = 4;
+		global.item_name_timer = room_speed * 2;
+		global.item_name_alpha = 1;
 	}
 }
 if mouse_wheel_down() {
 	if global.item_bar != 4 {
 		global.item_bar++;
+		global.item_name_timer = room_speed * 2;
+		global.item_name_alpha = 1;
 	}
 	else {
 		global.item_bar = 0;
+		global.item_name_timer = room_speed * 2;
+		global.item_name_alpha = 1;
 	}
 }
 //Quick Item Keybinds
-if global.item_one { global.item_bar = 0 }
-if global.item_two { global.item_bar = 1 }
-if global.item_three { global.item_bar = 2 }
-if global.item_four { global.item_bar = 3 }
-if global.item_five { global.item_bar = 4 }
+if global.item_one { global.item_bar = 0; global.item_name_timer = room_speed*2; global.item_name_alpha = 1;}
+if global.item_two { global.item_bar = 1; global.item_name_timer = room_speed*2; global.item_name_alpha = 1;}
+if global.item_three { global.item_bar = 2; global.item_name_timer = room_speed*2; global.item_name_alpha = 1;}
+if global.item_four { global.item_bar = 3; global.item_name_timer = room_speed*2; global.item_name_alpha = 1;}
+if global.item_five { global.item_bar = 4; global.item_name_timer = room_speed*2; global.item_name_alpha = 1;}
 
 //Pause
 if keyboard_check_pressed(vk_escape) {

@@ -23,3 +23,9 @@ else if obj_controller.prev_room = "rm_level_1_1" {
 	obj_player.x = inst_portal_lvl_one.x + 38;
 	obj_player.y = inst_portal_lvl_one.y + 50;
 }
+//Default
+else {
+	obj_player.x = inst_portal_lvl_one.x + 38;
+	obj_player.y = inst_portal_lvl_one.y + 50;
+
+}

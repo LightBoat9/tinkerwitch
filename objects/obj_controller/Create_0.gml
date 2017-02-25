@@ -40,9 +40,11 @@ global.pause = false;
 //GUI
 /* Sroll Wheel */
 global.item_bar = 0;
+global.item_name_timer = room_speed * 2; //How long the item bar shows object name
+global.item_name_alpha = 1;
 /* Item Bar Objects */
-global.item_one_obj = obj_checkpoint;
-global.item_two_obj = 0;
+global.item_one_obj = obj_item_missile;
+global.item_two_obj = obj_checkpoint;
 global.item_three_obj = 0;
 global.item_four_obj = 0;
 global.item_five_obj = 0;
