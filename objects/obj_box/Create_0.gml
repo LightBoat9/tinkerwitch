@@ -15,3 +15,6 @@ part = 0; //Corner particles when broken
 
 //Drop Item
 drop_item = obj_battery; //Item to drop upon break
+
+//Solid Object
+solid_obj = instance_create_depth(x,y,0,obj_solid_move);

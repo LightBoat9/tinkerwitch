@@ -48,4 +48,4 @@ if global.item_five_obj != 0 {
 }
 
 /* Testing */
-//draw_text(view_width/2,view_height/2,obj_player.mm_timer);
+draw_text(view_width/2,view_height/2,obj_solid.til_id);

@@ -1,3 +1,7 @@
+if destroy = true {
+	instance_destroy();
+}
+
 //Start making metal
 if cur_tile = til_castle {
 	if instance_exists(obj_wrench) {

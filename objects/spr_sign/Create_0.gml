@@ -20,3 +20,4 @@ draw_max = 40; //Hold the max height the text/sprite gets
 alpha = 0; //Starting alpha for the sprite
 text = ""; //Text to draw
 sprite = spr_solid; //Sprite to draw (default is a pink block)
+inst_sign_text = scr_sign_text(text,2,x,y);

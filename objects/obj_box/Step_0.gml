@@ -1,6 +1,10 @@
 //Movement
 scr_basic_movement();
 
+//Move solid object
+solid_obj.x = x;
+solid_obj.y = y;
+
 //Destroy Event
 if box_health <= 0 {
 	//Corner Particles
@@ -33,6 +37,8 @@ if box_health <= 0 {
 	if drop_item = obj_battery {
 		drop.value = value;
 	}
+	//Destroy solid object
+	solid_obj.destroy = true;
 	//Destroy
 	instance_destroy();
 }

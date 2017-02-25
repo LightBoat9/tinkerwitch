@@ -49,9 +49,16 @@ if move_manip = false {
 	}
 }
 
-//Collisions
+//All Collisions
 if place_meeting(x+hsp,y,obj_solid) {
 	while (!place_meeting(x+sign(hsp),y,obj_solid)) {
+		x += sign(hsp)
+	}
+	hsp = 0;
+}
+//For Just Movement
+if place_meeting(x+hsp,y,obj_solid_move) {
+	while (!place_meeting(x+sign(hsp),y,obj_solid_move)) {
 		x += sign(hsp)
 	}
 	hsp = 0;
@@ -59,13 +66,16 @@ if place_meeting(x+hsp,y,obj_solid) {
 
 x += hsp;
 
+//All Collisions
 if place_meeting(x,y+vsp,obj_solid) {
 	while (!place_meeting(x,y+sign(vsp),obj_solid)) {
 		y += sign(vsp);
 	}
-	//Fall Damage
-	if vsp > 25 {
-		player_health -= vsp * .01;
+	vsp = 0;
+//For Just Movement
+}if place_meeting(x,y+vsp,obj_solid_move) {
+	while (!place_meeting(x,y+sign(vsp),obj_solid_move)) {
+		y += sign(vsp);
 	}
 	vsp = 0;
 }

@@ -18,7 +18,7 @@ metal_val = scr_get_tile_metal();
 //Current Tile
 
 //Tiles for solid_tiles
-til_id = layer_tilemap_get_id("solid_tiles"); //Tilemap on layer id
+til_id = layer_tilemap_get_id("plains_tiles"); //Tilemap on layer id
 cur_tile = tilemap_get_tileset(til_id); // til_castle
 
 //Destroy event

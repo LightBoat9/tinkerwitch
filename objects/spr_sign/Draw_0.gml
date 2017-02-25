@@ -33,25 +33,17 @@ if draw_spr {
 else if draw_txt {
 	//Player Collision
 	if place_meeting(x,y,obj_player) {
-		//Align to center
-		draw_set_halign(fa_center);
-		//Move text up into position
-		if draw_y >= draw_max {
-			draw_text_colour(x+16,y-draw_y,text,c_white,c_white,c_white,c_white,alpha);
+		//Create text object
+		if !instance_exists(inst_sign_text) {
+			inst_sign_text = scr_sign_text(text,2,x,y);
 		}
-		else {
-			draw_text_colour(x+16,y-draw_y,text,c_white,c_white,c_white,c_white,alpha); //Draw at current alpha
-			draw_y += 2; //Slowly move up
-			//Slowly gain alpha until fully visible
-			if alpha < 1 {
-				alpha += .05;
-			}
-		}
-		image_index = 1; //Change to read sign
+		read = true;
 	}
 	else {
 		//Reset
+		if instance_exists(inst_sign_text) {
+			inst_sign_text.destroy = true;
+		}
 		draw_y = 0;
-		alpha = 0;
 	}
 }
