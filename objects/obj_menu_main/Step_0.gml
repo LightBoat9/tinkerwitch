@@ -10,6 +10,19 @@ if start {
 	exit;
 }
 
+//Resume Game
+if resume {
+	//Reactivate Instances
+	instance_activate_all();
+	//Goto index room
+	room_goto(rm_index);
+	//Destroy Menu
+	obj_menu_main_text.destroy = true;
+	instance_destroy();
+	exit;
+	
+}
+
 //Scroll through menu with keyboard
 if !graphics {
 	instance_deactivate_object(obj_menu_main_graphics_text);

@@ -10,9 +10,10 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+(cam_w/4),y+boxheight) {
 	if mouse_check_button_pressed(mb_left) {
 		switch (func) {
 			case 0: //Continue
-				obj_menu_main.start = true;
+				obj_menu_main.resume = true;
 				break;
 			case 1: //New Game
+				obj_menu_main.start = true;
 				break;
 			case 2: //Options
 				obj_menu_main.graphics = true;
@@ -31,7 +32,7 @@ if obj_menu_main.select = (func+1) {
 	func = 2 && keyboard_check_pressed(ord("D")) {
 		switch (func) {
 			case 0: //Continue
-				obj_menu_main.start = true;
+				obj_menu_main.resume = true;
 				break;
 			case 1: //New Game
 				obj_menu_main.start = true;

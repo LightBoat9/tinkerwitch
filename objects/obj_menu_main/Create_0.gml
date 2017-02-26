@@ -1,6 +1,9 @@
 //Start Variable
 start = false;
 
+//Continue Variable
+resume = false;
+
 //Graphics Menu Variables
 graphics = false;
 

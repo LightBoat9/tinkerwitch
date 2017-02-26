@@ -96,6 +96,7 @@ if global.metal > 0 {
 			if instance_number(obj_bot) < 8 {
 				if global.key_bots {
 					instance_create_depth(x,y,global.depth_1,obj_bot);
+					shield_health += instance_number(obj_bot)/8;
 				}
 			}
 		}
@@ -104,8 +105,10 @@ if global.metal > 0 {
 
 //Bots Shield
 scr_shield();
+//Max shield health based on number of bots
+shield_health_max = instance_number(obj_bot)/8;
 //Repair shield
-if shield_health < 1 {
+if shield_health < shield_health_max {
 	if instance_exists(obj_bot) {
 		if obj_bot.skill != 3 {
 			shield_health += .01;
@@ -115,14 +118,17 @@ if shield_health < 1 {
 		shield_health += .01;
 	}
 }
-//Keeps shield_health from going under 0
+//Keeps shield_health from going under 0 or above max health
 if shield_health < 0 {
 	shield_health = 0;
+}
+else if shield_health > shield_health_max {
+	shield_health = shield_health_max;
 }
 
 //Choose Item Based On Bar
 item_obj = scr_gui_item_obj();
-	//Make Item Parts
+//Make Item Parts
 if item_obj != 0 {
 	if global.item_wrench = true {
 		if instance_exists(obj_bot) {

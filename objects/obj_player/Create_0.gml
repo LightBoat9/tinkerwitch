@@ -25,6 +25,7 @@ missileParts = 0; //The amount of parts for the missile the player has
 
 //Shield
 shield_health = 1;
+shield_health_max = instance_number(obj_bot)/8;
 
 //Attacking
 empAttack = false;

@@ -3,25 +3,27 @@ if destroy = true {
 }
 
 //Start making metal
-if cur_tile = til_castle {
-	if instance_exists(obj_wrench) {
-		if obj_wrench.returnTimer = 1 {
-			if has_metal = true {
-				if place_meeting(x+1,y,obj_wrench) {
-					has_metal = false;
-					make_metal = true;
-				}
-				else if place_meeting(x-1,y,obj_wrench) {
-					has_metal = false;
-					make_metal = true;
-				}
-				else if place_meeting(x,y+1,obj_wrench) {
-					has_metal = false;
-					make_metal = true;
-				}
-				else if place_meeting(x,y-1,obj_wrench) {
-					has_metal = false;
-					make_metal = true;
+if global.metal + 1 <= 24 { //Check and make sure it wont overflow
+	if cur_tile = til_castle {
+		if instance_exists(obj_wrench) {
+			if obj_wrench.returnTimer = 1 {
+				if has_metal = true {
+					if place_meeting(x+1,y,obj_wrench) {
+						has_metal = false;
+						make_metal = true;
+					}
+					else if place_meeting(x-1,y,obj_wrench) {
+						has_metal = false;
+						make_metal = true;
+					}
+					else if place_meeting(x,y+1,obj_wrench) {
+						has_metal = false;
+						make_metal = true;
+					}
+					else if place_meeting(x,y-1,obj_wrench) {
+						has_metal = false;
+						make_metal = true;
+					}
 				}
 			}
 		}

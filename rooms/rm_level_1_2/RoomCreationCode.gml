@@ -23,3 +23,9 @@ else if obj_controller.prev_room = "rm_level_1_3" {
 	obj_player.x = port_1_2_exit.x + 38;
 	obj_player.y = port_1_2_exit.y + 50;
 }
+
+//Set Bots Position to player
+if instance_exists(obj_bot) {
+	obj_bot.x = obj_player.x;
+	obj_bot.y = obj_player.y;
+}

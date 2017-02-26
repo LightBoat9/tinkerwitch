@@ -6,7 +6,8 @@
     "children": [
         "f35cec12-bae4-4bc8-98de-1e5052bab15e",
         "f5390604-00c0-43a6-92ab-cf84bd98e18e",
-        "c618f735-d01e-4187-b9b6-cf8c227ade67"
+        "c618f735-d01e-4187-b9b6-cf8c227ade67",
+        "7d8bfc63-9b66-4feb-96ef-ce1526605f88"
     ],
     "filterType": "GMSprite",
     "folderName": "Bars",

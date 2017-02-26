@@ -28,3 +28,9 @@ else {
 	obj_player.x = port_1_5_enter.x + 38;
 	obj_player.y = port_1_5_enter.y + 50;
 }
+
+//Set Bots Position to player
+if instance_exists(obj_bot) {
+	obj_bot.x = obj_player.x;
+	obj_bot.y = obj_player.y;
+}
