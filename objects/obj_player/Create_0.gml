@@ -18,6 +18,7 @@ grav = 1; //Gravity
 jumpspeed = 13.5; //Jump "height"
 movespeed = 5; //Horizontal movement
 grounded = false; //Whether on ground or not
+interacting = false; //Whether the player is interacting with certain objects, turns off abilities
 
 //Items
 global.item_wrench = true; // Whether the player has the wrench or not

@@ -50,15 +50,15 @@ if global.item_two_obj != 0 {
 }
 if global.item_three_obj != 0 {
 	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_two_obj),-1,(view_width/2-24),(view_height-56));
+	draw_sprite(scr_gui_item_sprite(global.item_three_obj),-1,(view_width/2-24),(view_height-56));
 }
 if global.item_four_obj != 0 {
 	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_two_obj),-1,(view_width/2+40),(view_height-56));
+	draw_sprite(scr_gui_item_sprite(global.item_four_obj),-1,(view_width/2+40),(view_height-56));
 }
 if global.item_five_obj != 0 {
 	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_two_obj),-1,(view_width/2+104),(view_height-56));
+	draw_sprite(scr_gui_item_sprite(global.item_five_obj),-1,(view_width/2+104),(view_height-56));
 }
 
 //Object Name Text

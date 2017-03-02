@@ -16,6 +16,7 @@ else {
 //Movement
 scr_player_movement();
 
+if !interacting {
 //Charge Mana Faster
 global.mouse_left = mouse_check_button(mb_left);
 if global.mana < 24 {
@@ -156,6 +157,7 @@ if item_obj != 0 {
 		instance_create_depth(x,y,global.depth_0,item_obj);
 		item_parts = 0;
 	}
+}
 }
 
 //Death Event

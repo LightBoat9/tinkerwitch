@@ -28,6 +28,7 @@ global.item_five = keyboard_check(ord("5"));
 
 /* Mouse Bindings */
 global.mouse_left = mouse_check_button(mb_left);
+global.mouse_right = mouse_check_button(mb_right);
 
 /* Backgrounds */
 /* COMMENTED OUT CODE FOR MOVING BACKGROUNDS 

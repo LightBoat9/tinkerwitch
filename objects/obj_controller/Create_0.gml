@@ -3,7 +3,6 @@
 //Persistent
 persistent = true;
 
-
 //Rooms
 cur_room = room_get_name(room);
 prev_room = room_get_name(room);
@@ -32,7 +31,7 @@ global.bot_eight = false;
 /* Stats */
 global.metal = 0;
 global.mana = 24;
-global.charge = 0;
+global.charge = 81;
 /* Settings */
 global.autojump = true;
 global.pause = false;
@@ -43,11 +42,14 @@ global.item_bar = 0;
 global.item_name_timer = room_speed * 2; //How long the item bar shows object name
 global.item_name_alpha = 1;
 /* Item Bar Objects */
-global.item_one_obj = obj_item_missile;
-global.item_two_obj = obj_checkpoint;
+global.item_one_obj = obj_checkpoint;
+global.item_two_obj = 0;
 global.item_three_obj = 0;
 global.item_four_obj = 0;
 global.item_five_obj = 0;
+/* All Item Objects */
+global.has_item_missile = false;
+
 
 /* 
  * Video Options 

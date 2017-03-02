@@ -7,8 +7,9 @@ y += vsp;
 //Collide with player
 if place_meeting(x,y,obj_player) {
 	//Player Collects
-	if global.metal+metal_val <= 24 {
-		global.metal += metal_val;
+	while global.metal+metal_val > 24 {
+		metal_val--;
 	}
+	global.metal += metal_val;
 	instance_destroy();
 }
