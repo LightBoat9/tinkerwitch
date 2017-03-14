@@ -49,3 +49,6 @@ mana_charge = false;
 
 //Items
 item_parts = 0;
+
+//Audio
+walk_cycle = false;

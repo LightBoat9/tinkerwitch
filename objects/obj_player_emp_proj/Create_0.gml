@@ -12,3 +12,6 @@ dest_solid = false;
 
 //Subtract Mana
 global.mana--;
+
+//Sound
+audio_play_sound(snd_emp_fire,0,false);

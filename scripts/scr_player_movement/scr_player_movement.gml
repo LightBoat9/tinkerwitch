@@ -63,8 +63,13 @@ vsp += grav;
 if move_manip = false {
 	if place_meeting(x,y+1,obj_solid) { //If grounded
 		vsp = global.key_jump * -jumpspeed; //Jump based on input
+		//Jump Sound
+		if global.key_jump {
+			audio_play_sound(snd_jump,0,false);
+		}
 		if global.autojump { //Autojumping at walls
 			if place_meeting(x+sign(hsp),y,obj_solid) { //Meeting the wall while walking
+				audio_play_sound(snd_jump,0,false);
 				vsp = -jumpspeed; //Jump
 			}
 		}

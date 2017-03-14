@@ -14,6 +14,7 @@ if collided = false {
 		hsp = 0;
 		vsp = 0;
 		collided = true;
+		audio_play_sound_at(snd_impact_dirt,x,y,0,100,300,1,false,0);
 	}
 }
 
@@ -28,6 +29,7 @@ if collided = false {
 		hsp = 0;
 		vsp = 0;
 		collided = true;
+		audio_play_sound_at(snd_impact_dirt,x,y,0,100,300,1,false,0);
 	}
 }
 

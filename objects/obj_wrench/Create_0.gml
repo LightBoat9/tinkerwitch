@@ -14,3 +14,6 @@ returnTimer = room_speed / 2; //Time wrench sticks in wall
 
 //Throw distance
 distance = 16;
+
+//Throw Sound
+audio_play_sound(snd_throw_whip,0,false);

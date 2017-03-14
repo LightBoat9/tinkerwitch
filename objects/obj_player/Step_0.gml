@@ -16,6 +16,24 @@ else {
 //Movement
 scr_player_movement();
 
+//Walk Sound
+if empAttack = false && !mouse_check_button(mb_left) {
+	if grounded && hsp != 0 {
+		if !walk_cycle {
+			audio_play_sound_at(snd_walk_cycle,x,y,0,100,300,1,true,0);
+			walk_cycle = true;
+		}
+	}
+	else {
+		walk_cycle = false;
+		audio_stop_sound(snd_walk_cycle);
+	}
+}
+else {
+	walk_cycle = false;
+	audio_stop_sound(snd_walk_cycle);
+}
+
 if !interacting {
 //Charge Mana Faster
 global.mouse_left = mouse_check_button(mb_left);

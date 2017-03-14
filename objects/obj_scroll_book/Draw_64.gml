@@ -5,7 +5,7 @@ mouse_gui_ypos = mouse_y - camera_get_view_y(view_get_camera(0));
 //Draw sprite dragging
 if move_item_missile {
 	draw_sprite(spr_item_missile_scroll,-1,mouse_gui_xpos,mouse_gui_ypos);
-	if mouse_check_button_pressed(mb_left) {
+	if mouse_check_button_released(mb_left) {
 		if point_in_rectangle(
 			mouse_gui_xpos,mouse_gui_ypos, //Mouse x and y position
 			(obj_controller.view_width/2)-162,

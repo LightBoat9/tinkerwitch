@@ -43,11 +43,12 @@ if using {
 		item_missile_text.y = mouse_y;
 		//Buying the item
 		if global.has_item_missile = false {
-			if global.mouse_left {
+			if global.mouse_left { //Buy Item
 				if item_missile_cost <= global.charge {
 					global.has_item_missile = true;
 					global.charge -= item_missile_cost;
-					item_missile_text.text = purch_str;
+					item_missile_text.destroy = true;
+					item_missile_text = scr_scroll_book_text(purch_str, 2, item_missile_text.x,item_missile_text.y);
 				}
 			}
 		}
@@ -62,13 +63,16 @@ if using {
 						break;
 				}
 			}
+			if !global.mouse_left {
+				move_item_missile = false;
+			}
 		}
 	}
 	else { //If not in rectangle
 		instance_deactivate_object(item_missile_text);
 		//Drop All Items
 		if !mouse_over_itembar {
-			if mouse_check_button_pressed(mb_left) {
+			if !(mouse_check_button(mb_left)) {
 				move_item_missile = false;
 			}
 		}
