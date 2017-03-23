@@ -8,3 +8,6 @@ if instance_exists(obj_box) {
 if instance_exists(obj_ground_slug) {
 	obj_ground_slug.createDmgBox = true;
 }
+if instance_exists(obj_snail_king) {
+	obj_snail_king.createDmgBox = true;
+}

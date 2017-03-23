@@ -14,7 +14,7 @@ if global.testing = false {
 // Getting Hit
 if place_meeting(x,y,obj_player_emp_proj) {
 	with (box_inst) {
-		box_health -= .5;
+		box_health -= 1;
 	}
 	empInst = instance_nearest(x,y,obj_player_emp_proj);
 	empInst.destroy = true;

@@ -4,6 +4,7 @@ mid_y = y + 16;
 if !collected {
 	if place_meeting(x,y,obj_player) {
 		collected = true;
+		audio_play_sound(snd_collect,0,false);
 	}
 }
 

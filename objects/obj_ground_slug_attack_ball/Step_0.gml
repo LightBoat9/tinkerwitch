@@ -24,14 +24,14 @@ if place_meeting(x+hsp,y,obj_player) {
 	while !place_meeting(x+sign(hsp),y,obj_player) {
 		x += sign(hsp);
 	}
-	obj_player.player_health -= .1;
+	scr_player_hurt(.1);
 	destroy = true;
 }
 else if place_meeting(x,y+vsp,obj_player) {
 	while !place_meeting(x,y+sign(vsp),obj_player) {
 		y += sign(vsp);
 	}
-	obj_player.player_health -= .1;
+	scr_player_hurt(.1);
 	destroy = true;
 }
 

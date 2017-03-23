@@ -29,6 +29,7 @@ if using {
 	//Draw Contents
 	if item_missile {
 		draw_sprite(spr_item_missile_scroll, -1, mid_x-320, above_y-320);
+		draw_sprite(spr_item_checkpoint_scroll, -1, mid_x-256, above_y-320);
 	}
 }
 draw_set_color(c_white);

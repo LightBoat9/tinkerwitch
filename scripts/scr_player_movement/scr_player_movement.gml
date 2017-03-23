@@ -3,7 +3,7 @@
  * Movespeed Changes
  **********************************************************/
 //Whether the player is meeting solid ground (For use from other objects only)
-if place_meeting(x,y+1,obj_solid) {
+if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_solid_move) {
 	grounded = true;
 }
 else {
@@ -61,7 +61,7 @@ vsp += grav;
 
 //Jumping
 if move_manip = false {
-	if place_meeting(x,y+1,obj_solid) { //If grounded
+	if grounded { //If grounded
 		vsp = global.key_jump * -jumpspeed; //Jump based on input
 		//Jump Sound
 		if global.key_jump {

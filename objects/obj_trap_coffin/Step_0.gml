@@ -43,7 +43,7 @@ if hsp_free > 0 {
 	//Hit Player
 	if !player_hit_bool {
 		if player_hit {
-			obj_player.player_health -= .25;
+			scr_player_hurt(.25);
 			obj_player.move_manip = true;
 			obj_player.hsp = now_hsp;
 			player_hit_bool = true;

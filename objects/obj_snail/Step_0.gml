@@ -62,14 +62,14 @@ if stunned = false {
 	if obj_player.move_manip = false {
 		if instance_exists(obj_player) {
 			if place_meeting(x+hsp,y,obj_player) {
-				obj_player.player_health -= .25;
+				scr_player_hurt(.25);
 				obj_player.move_manip = true;
 				obj_player.hsp = (hsp * 2);
 				obj_player.vsp = -5;
 				scr_snail_dir_switch();
 			}
 			else if place_meeting(x,y+vsp,obj_player) {
-				obj_player.player_health -= .25;
+				scr_player_hurt(.25);
 				obj_player.move_manip = true;
 				obj_player.hsp = (hsp * 2);
 				obj_player.vsp = -5;

@@ -12,7 +12,7 @@ if place_meeting(x,y+vsp,obj_player) {
 	while !place_meeting(x,y+sign(vsp),obj_player) {
 		y += sign(vsp);
 	}
-	obj_player.player_health -= 1/10;
+	scr_player_hurt(1/10);
 	vsp = 0;
 	destroy = true;
 }

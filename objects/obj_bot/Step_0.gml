@@ -7,6 +7,7 @@ if destroy = true {
 		}
 	}
 	scr_bot_dest(bot_open);
+	audio_play_sound(snd_metal_impact,0,false);
 	instance_destroy();
 }
 //Float around the player

@@ -31,7 +31,7 @@ global.bot_eight = false;
 /* Stats */
 global.metal = 0;
 global.mana = 24;
-global.charge = 81;
+global.charge = 0;
 /* Settings */
 global.autojump = true;
 global.pause = false;
@@ -49,6 +49,7 @@ global.item_four_obj = 0;
 global.item_five_obj = 0;
 /* All Item Objects */
 global.has_item_missile = false;
+global.has_item_checkpoint = true;
 
 
 /* 
