@@ -17,3 +17,6 @@ distance = 16;
 
 //Throw Sound
 audio_play_sound(snd_throw_whip,0,false);
+
+//Destroy Event
+destroy = false;

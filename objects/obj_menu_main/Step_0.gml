@@ -12,12 +12,8 @@ if start {
 
 //Resume Game
 if resume {
-	//Reactivate Instances
-	instance_activate_all();
 	//Goto index room
-	room_goto(rm_index);
-	//Destroy Menu
-	obj_menu_main_text.destroy = true;
+	scr_load();
 	instance_destroy();
 	exit;
 	

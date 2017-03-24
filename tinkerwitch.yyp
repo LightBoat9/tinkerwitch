@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "3537105c-0678-402a-82e8-09011b5376cf",
+            "Value": {
+                "id": "b92470d6-4ca5-4743-ab29-bf0a6165e364",
+                "resourcePath": "objects\\obj_save\\obj_save.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "358cc53e-5cee-40fb-b7fb-580900d4178b",
             "Value": {
                 "id": "271325c5-7cb8-481f-9f83-b0dce42d7d47",
@@ -1316,6 +1324,14 @@
                 "id": "fc7cc2b7-9f37-4f9b-99c9-f580c4faaba7",
                 "resourcePath": "sprites\\spr_item_missile_explosion\\spr_item_missile_explosion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a42b3388-140e-40f1-a428-40587533856b",
+            "Value": {
+                "id": "fcae7698-8e85-422a-a761-5dfb530171a9",
+                "resourcePath": "scripts\\scr_load\\scr_load.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2228,7 +2244,8 @@
         "8089b872-12f9-46c4-83ac-0c1d5e8ee759",
         "8d556fed-1f74-41b9-9fff-3bdfeb63fa4c",
         "b30f7485-017d-4924-9ed3-c09c78c5f684",
-        "0a25102a-cc5e-4582-8286-79adcc4b8826"
+        "0a25102a-cc5e-4582-8286-79adcc4b8826",
+        "a42b3388-140e-40f1-a428-40587533856b"
     ],
     "tutorial": ""
 }

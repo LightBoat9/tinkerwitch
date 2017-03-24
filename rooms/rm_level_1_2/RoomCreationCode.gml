@@ -4,6 +4,10 @@ if instance_exists(obj_player) {
 	obj_player.hsp = 0;
 	obj_player.vsp = 0;
 }
+//Create Player
+else {
+	instance_create_depth(0,0,0,obj_player);
+}
 
 //Update Room / Last Room Visited
 scr_controller_rooms();
@@ -22,6 +26,11 @@ else if obj_controller.prev_room = "rm_level_1_1" {
 else if obj_controller.prev_room = "rm_level_1_3" {
 	obj_player.x = port_1_2_exit.x + 38;
 	obj_player.y = port_1_2_exit.y + 50;
+}
+//Default
+else {
+	obj_player.x = port_1_2_enter.x + 38;
+	obj_player.y = port_1_2_enter.y + 50;
 }
 
 //Set Bots Position to player

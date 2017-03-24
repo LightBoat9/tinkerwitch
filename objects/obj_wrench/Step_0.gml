@@ -63,3 +63,9 @@ if collided = true {
 		distance--;
 	}
 }
+
+//Destroy Event
+if destroy {
+	global.item_wrench = true;
+	instance_destroy();
+}
