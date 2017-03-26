@@ -11,7 +11,7 @@ else {
 
 //Update Room / Last Room Visited
 scr_controller_rooms();
-/*
+
 //Spawn on checkpoint
 if instance_exists(obj_checkpoint) {
 	obj_player.x = obj_checkpoint.x;
@@ -19,18 +19,18 @@ if instance_exists(obj_checkpoint) {
 }
 //Coming from prev room
 else if obj_controller.prev_room = "rm_level_1_4" {
-	obj_player.x = port_1_5_enter.x + 38;
-	obj_player.y = port_1_5_enter.y + 50;
+	obj_player.x = port_1_6_enter.x + 38;
+	obj_player.y = port_1_6_enter.y + 50;
 }
 //Coming from next room
 else if obj_controller.prev_room = "rm_level_1_6" {
-	obj_player.x = port_1_5_exit.x + 38;
-	obj_player.y = port_1_5_exit.y + 50;
+	obj_player.x = port_1_6_exit.x + 38;
+	obj_player.y = port_1_6_exit.y + 50;
 }
 //Default
 else {
-	obj_player.x = port_1_5_enter.x + 38;
-	obj_player.y = port_1_5_enter.y + 50;
+	obj_player.x = port_1_6_enter.x + 38;
+	obj_player.y = port_1_6_enter.y + 50;
 }
 
 //Set Bots Position to player
