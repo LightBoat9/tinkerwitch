@@ -16,7 +16,8 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+(cam_w/4),y+boxheight) {
 				obj_pause.graphics = true;
 				break;
 			case 2: //End
-				game_end();
+				save = instance_create_depth(0,0,0,obj_save);
+				save.exit_game = true;
 				break;
 		}
 	}
@@ -35,7 +36,8 @@ if obj_pause.select = (func+1) {
 				obj_pause.graphics = true;
 				break;
 			case 2: //End
-				game_end();
+				save = instance_create_depth(0,0,0,obj_save);
+				save.exit_game = true;
 				break;
 		}
 	}

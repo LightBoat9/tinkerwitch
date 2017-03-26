@@ -11,6 +11,12 @@ if instance_exists(obj_checkpoint) {
 	obj_player.x = obj_checkpoint.x;
 	obj_player.y = obj_checkpoint.y-16;
 }
+//FIX THIS - delete comments
+/*
+else {
+	obj_player.x = 125;
+	obj_player.y = 771;
+}*/
 
 //Set Bots Position to player
 if instance_exists(obj_bot) {

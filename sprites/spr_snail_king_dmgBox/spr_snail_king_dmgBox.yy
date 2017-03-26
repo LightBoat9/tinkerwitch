@@ -61,7 +61,7 @@
     "swfPrecision": 2.525,
     "textureGroup": 0,
     "type": 0,
-    "width": 69,
-    "xorig": 34,
+    "width": 75,
+    "xorig": 37,
     "yorig": 49
 }

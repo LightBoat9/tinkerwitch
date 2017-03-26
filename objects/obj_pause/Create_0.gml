@@ -15,7 +15,7 @@ select = 1; //The currently selected menu option
 graphic_select = 1; //The currently selected options menu option
 scr_pause_text("RESUME",2,cam_x+64,cam_y+64,0); //Change last param for new additions
 scr_pause_text("OPTIONS",2,cam_x+64,cam_y+128,1); //Change last param for new additions
-scr_pause_text("QUIT",2,cam_x+64,cam_y+192,2); //Change last param for new additions
+scr_pause_text("SAVE & QUIT",2,cam_x+64,cam_y+192,2); //Change last param for new additions
 
 //Graphics Options
 scr_pause_graphics("PARTICLES",2,cam_x+64+(cam_w/4)+96,cam_y+64,0); //Change last param for new additions

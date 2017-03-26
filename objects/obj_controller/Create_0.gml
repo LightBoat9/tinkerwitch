@@ -1,5 +1,8 @@
 /// @description Global Variables
 
+//Asnc and Antialiasing
+display_reset(8,true);
+
 //Persistent
 persistent = true;
 
@@ -35,6 +38,9 @@ global.charge = 0;
 /* Settings */
 global.autojump = true;
 global.pause = false;
+
+//Saving
+global.save_slot = 1;
 
 //GUI
 /* Sroll Wheel */

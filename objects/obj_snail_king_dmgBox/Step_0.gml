@@ -27,6 +27,9 @@ if place_meeting(x,y,obj_player_emp_proj) {
 	snail_inst.enemy_health -= .05;
 	empInst = instance_nearest(x,y,obj_player_emp_proj);
 	empInst.destroy = true;
+	if (obj_snail_king.attack_type = "roll") {
+		obj_snail_king.roll_amount--;
+	}
 	instance_destroy();
 }
 if place_meeting(x,y,obj_item_missile) {
@@ -35,6 +38,9 @@ if place_meeting(x,y,obj_item_missile) {
 		snail_inst.enemy_health -= .1;
 		scr_reset_dmgBox();
 		instance_destroy();
+	}
+	if (obj_snail_king.attack_type = "roll") {
+		obj_snail_king.roll_amount--;
 	}
 }
 

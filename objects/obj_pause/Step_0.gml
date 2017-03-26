@@ -1,6 +1,7 @@
 //Unpause with escape
 if keyboard_check_pressed(vk_escape) || unpause {
 	instance_activate_all();
+	instance_deactivate_object(obj_scroll_book_text);
 	sprite_delete(global.pause_surface);
 	//Destroy Menu
 	obj_pause_text.destroy = true;
