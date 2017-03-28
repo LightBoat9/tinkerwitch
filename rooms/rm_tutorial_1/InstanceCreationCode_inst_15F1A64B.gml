@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "Press E to interact";
+text =  "PRESS E TO INTERACT WITH THAT PORTAL AND GOOD LUCK";

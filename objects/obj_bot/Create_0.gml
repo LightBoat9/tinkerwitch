@@ -1,5 +1,5 @@
 //Depth
-depth = global.depth_3;
+depth = -150;
 
 //Persistence
 persistent = true;

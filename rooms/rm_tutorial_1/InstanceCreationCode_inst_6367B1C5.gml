@@ -1,0 +1,2 @@
+draw_txt = true;
+text =  "THIS REQUIRES A LITTLE MANA SHOWN IN THE BOTTOM LEFT IN BLUE";

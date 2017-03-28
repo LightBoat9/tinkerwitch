@@ -1,6 +1,6 @@
 //Destroy Event
 destroy = false;
-destTimer = room_speed / 3;
+destTimer = room_speed / 2;
 
 //Movement
 vsp = 0;

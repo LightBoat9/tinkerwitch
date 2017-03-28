@@ -1,3 +1,6 @@
+//Depth
+depth = -10001;
+
 destroy = false; //Destroy event
 
 alpha = 0; //Alpha for transparency over time

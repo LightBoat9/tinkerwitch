@@ -9,6 +9,8 @@
         "5015326a-2ebf-4ac9-ae1a-455429bf993c",
         "6dd6469e-d27f-42e9-9eaa-7c65c2616719",
         "af4baf3c-8de6-40d2-9b1d-faa6075b8aa9",
+        "2860ce64-c706-451a-92bb-614041761e37",
+        "a174dac9-b401-4b6a-a83c-1cb672a4866a",
         "4141abbc-fc68-4cdd-a856-62a3c67e51c5"
     ],
     "filterType": "GMRoom",

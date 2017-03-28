@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "Left mouse button to basic attack";
+text =  "LEFT MOUSE BUTTON TO CAST BASIC SPELLS";

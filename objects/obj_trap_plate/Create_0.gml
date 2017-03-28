@@ -9,3 +9,6 @@ trap_start = false; //When the trap is triggered
 cof_inst = obj_trap_coffin;
 
 sound = true; //Play a sound when stepped on
+
+state = "once"
+wait = false;

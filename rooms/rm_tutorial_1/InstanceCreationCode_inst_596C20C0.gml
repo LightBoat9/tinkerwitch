@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "Press SHIFT to shield yourself with the bots";
+text =  "PRESS SHIFT TO FORM YOUR BOTS INTO A PROTECTIVE SHIELD";

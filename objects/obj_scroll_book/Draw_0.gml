@@ -35,3 +35,30 @@ if using {
 draw_set_color(c_white);
 draw_set_alpha(1);
 
+//While not using 
+if !using {
+	//Player Collision
+	if place_meeting(x,y,obj_player) {
+		//Move sprite up into position
+		if draw_y >= draw_max {
+			draw_sprite_ext(spr_kb_e,0,x,y-draw_y,1,1,0,c_white,spr_alpha);
+			if spr_alpha < 1 {
+				spr_alpha += .05;
+			}
+		}
+		else {
+			draw_sprite_ext(spr_kb_e,0,x,y-draw_y,1,1,0,c_white,spr_alpha); //Draw at current alpha
+			draw_y += 2; //Slowly move up
+			//Slowly gain alpha until fully visible
+			if spr_alpha < 1 {
+				spr_alpha += .05;
+			}
+		}
+	}
+	else {
+		//Reset
+		draw_y = 32;
+		spr_alpha = 0;
+	}
+}
+

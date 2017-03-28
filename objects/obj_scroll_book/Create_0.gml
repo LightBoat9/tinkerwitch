@@ -1,6 +1,11 @@
 //Depth
 depth = global.depth_1;
 
+//Use Sprite
+draw_y = 32; //Hold the y position of the text/sprite
+draw_max = 64; //Hold the max height the text/sprite gets
+spr_alpha = 0; //Starting alpha for the sprite
+
 //The Middle Cordinates
 mid_x = x+16;
 mid_y = y+16;

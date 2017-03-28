@@ -14,13 +14,13 @@ if instance_exists(obj_player) {
 
 /* Metal Bar */
 metalAmount = global.metal/24;
-draw_sprite_ext(spr_metalbar_bot,-1,16,view_height-64,metalAmount,1,0,c_white,1);
-draw_sprite(spr_medbar_top,-1,16,view_height-64);
+draw_sprite_ext(spr_metalbar_bot,-1,66,view_height-128,metalAmount,1,0,c_white,1);
+draw_sprite(spr_metalbar_top,-1,16,view_height-128);
 
 /* Mana Bar */
 manaAmount = global.mana/24;
-draw_sprite_ext(spr_manabar_bot,-1,16,view_height-32,manaAmount,1,0,c_white,1);
-draw_sprite(spr_medbar_top,-1,16,view_height-32);
+draw_sprite_ext(spr_manabar_bot,-1,66,view_height-64,manaAmount,1,0,c_white,1);
+draw_sprite(spr_manabar_top,-1,16,view_height-64);
 
 /* Charge Bar */
 draw_sprite(spr_charge,-1,view_width-144,16);
@@ -39,27 +39,7 @@ draw_set_valign(fa_bottom);
 draw_set_halign(fa_middle);
 draw_set_color(c_white);
 
-/* Item Icons */
-if global.item_one_obj != 0 {
-	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_one_obj),-1,(view_width/2-152),(view_height-56));
-}
-if global.item_two_obj != 0 {
-	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_two_obj),-1,(view_width/2-88),(view_height-56));
-}
-if global.item_three_obj != 0 {
-	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_three_obj),-1,(view_width/2-24),(view_height-56));
-}
-if global.item_four_obj != 0 {
-	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_four_obj),-1,(view_width/2+40),(view_height-56));
-}
-if global.item_five_obj != 0 {
-	//Scroll
-	draw_sprite(scr_gui_item_sprite(global.item_five_obj),-1,(view_width/2+104),(view_height-56));
-}
+scr_draw_item_scrolls();
 
 //Object Name Text
 if global.item_name_timer > 0 {

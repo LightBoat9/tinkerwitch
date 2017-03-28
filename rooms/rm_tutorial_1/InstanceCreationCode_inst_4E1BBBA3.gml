@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "Press R to craft the metal into bots";
+text =  "YOU CAN CRAFT METAL IN TO UP TO 8 HELPFUL BOTS WITH THE 'R' KEY";

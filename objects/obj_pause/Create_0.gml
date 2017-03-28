@@ -1,3 +1,6 @@
+//Depth
+depth = -10000;
+
 //Unpause Variable
 unpause = false;
 

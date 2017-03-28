@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "Your current scrolls are shown at the bottom";
+text =  "YOUR CURRENT SCROLLS ARE SHOWN IN THE BOTTOM ITEM BAR";

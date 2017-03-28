@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "Press Q to collect metal from walls";
+text =  "PRESS Q TO THROW YOUR WRENCH AND COLLECT METAL FROM WALLS";

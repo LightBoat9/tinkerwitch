@@ -81,6 +81,7 @@ if instance_exists(obj_bot) {
 			hsp = 0;
 			grav = 1;
 			movespeed = 3;
+			player_hit_bool = true;
 			
 			//Switch direction
 			if hit_obj = false {
@@ -108,9 +109,6 @@ if instance_exists(obj_bot) {
 			grav = 1;
 			movespeed = 3;
 			
-			//Push player back
-			obj_player.move_manip = true;
-			obj_player.hsp = now_hsp / 6;
 			player_hit_bool = true;
 			
 			//Switch direction

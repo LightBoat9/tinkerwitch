@@ -145,39 +145,37 @@ else if shield_health > shield_health_max {
 	shield_health = shield_health_max;
 }
 
+scr_item_cooldown();
+
 //Choose Item Based On Bar
 item_obj = scr_gui_item_obj();
 //Make Item Parts
-if item_obj != 0 {
-	if global.item_wrench = true {
-		if instance_exists(obj_bot) {
-			if global.key_item {
-				obj_bot.skill = 2;
-				if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
-					if item_parts < 8 {
-						with (instance_nearest(x,y,obj_bot)) {
-							destroy = true;
+if (scr_item_cooldown_get(item_obj) <= 0) {
+	if item_obj != 0 {
+		if global.item_wrench = true {
+			if instance_exists(obj_bot) {
+				if global.key_item {
+					obj_bot.skill = 2;
+					if distance_to_point(obj_bot.x,obj_bot.y) < 1 {
+						if item_parts < 8 {
+							with (instance_nearest(x,y,obj_bot)) {
+								destroy = true;
+							}
+							item_parts++;
 						}
-						item_parts++;
 					}
 				}
 			}
 		}
-	}
-	//Create Item
-	if item_parts >= 8 {
-		//Destroy existsing checkpoints
-		if item_obj = obj_checkpoint {
-			if instance_exists(obj_checkpoint) {
-				obj_checkpoint.destroy = true;
-			}
+		//Create Item
+		if item_parts >= scr_item_req(item_obj) {
+			instance_create_depth(x,y,global.depth_0,item_obj);
+			scr_item_cooldown_set(item_obj);
+			item_parts = 0;
 		}
-		instance_create_depth(x,y,global.depth_0,item_obj);
-		item_parts = 0;
+	}
 	}
 }
-}
-
 //Death Event
 if player_health <= 0 {
 	global.missileAiming = false;

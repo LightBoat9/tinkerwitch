@@ -31,7 +31,7 @@ else {
 	item_missile_height = 0;
 }
 
-//Get the width and heigth of the missile scroll
+//Get the width and heigth of the checkpoint scroll
 if item_checkpoint {
 	item_checkpoint_width = sprite_get_width(spr_item_checkpoint_scroll);
 	item_checkpoint_height = sprite_get_height(spr_item_checkpoint_scroll);
@@ -143,6 +143,7 @@ if using {
 }
 else { //If not using
 	instance_deactivate_object(item_missile_text);
+	instance_deactivate_object(obj_scroll_book_text);
 	//List All Items
 	move_item_missile = false;
 	move_item_checkpoint = false;
@@ -155,4 +156,6 @@ if using {
 else {
 	alpha = 0;
 }
+
+
 

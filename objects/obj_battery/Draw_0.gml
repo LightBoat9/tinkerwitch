@@ -6,7 +6,6 @@ if image_xscale != 0 && image_yscale != 0 { //If the image is not resized to be 
 	}
 }
 else {
-	global.charge += value; //Add the charge currency
 	instance_destroy(); //Destroy
 }
 

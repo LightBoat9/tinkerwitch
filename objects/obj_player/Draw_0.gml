@@ -50,12 +50,12 @@ if !mana_charge {
 		//Attack Animation
 		if global.item_wrench = true {
 			if mouseDir = 1 {
-				image_speed = 0.3;
+				image_speed = global.cast_speed;
 				sprite_index = spr_player_emp;
 				image_xscale = 1;
 			}
 			else if mouseDir = -1 {
-				image_speed = 0.3;
+				image_speed = global.cast_speed;
 				sprite_index = spr_player_emp;
 				image_xscale = -1;
 			}

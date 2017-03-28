@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "You have to craft your own checkpoints";
+text =  "YOU CAN ALSO SACRIFICE YOUR BOTS FOR SPECIAL WEAPONS AND TOOLS";

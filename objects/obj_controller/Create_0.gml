@@ -35,6 +35,8 @@ global.bot_eight = false;
 global.metal = 0;
 global.mana = 24;
 global.charge = 0;
+global.cast_speed = 0.3;
+
 /* Settings */
 global.autojump = true;
 global.pause = false;
@@ -49,13 +51,18 @@ global.item_name_timer = room_speed * 2; //How long the item bar shows object na
 global.item_name_alpha = 1;
 /* Item Bar Objects */
 global.item_one_obj = obj_checkpoint;
-global.item_two_obj = 0;
+global.item_two_obj = obj_item_block;
 global.item_three_obj = 0;
 global.item_four_obj = 0;
 global.item_five_obj = 0;
 /* All Item Objects */
 global.has_item_missile = false;
 global.has_item_checkpoint = true;
+global.has_item_block = true;
+/* Item Object Cooldowns */
+global.item_missile_cool = 0;
+global.item_checkpoint_cool = 0;
+global.item_block_cool = 0;
 
 
 /* 

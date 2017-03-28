@@ -1,2 +1,2 @@
 draw_txt = true;
-text =  "To craft something you need its scroll, 8 Bots, and sometimes some mana";
+text =  "FIRST YOU HAVE TO SELECT THE SCROLL WITH THE RECIPE YOU WANT TO CRAFT";
