@@ -1,3 +1,6 @@
+//Surface
+main_surface = surface_create(1280,720);
+
 //Start Variable
 start = false;
 
@@ -48,4 +51,3 @@ scr_main_menu_graphics("FULLSCREEN",2,cam_x+64+(cam_w/4)+96,cam_y+192,1); //Chan
 scr_main_menu_graphics("DEV MODE",2,cam_x+64+(cam_w/4)+96,cam_y+320,2); //Change last param for new additions
 scr_main_menu_graphics("BACK",2,cam_x+64+(cam_w/4)+96,cam_y+448,3); //Change last param for new additions
 instance_deactivate_object(obj_menu_main_graphics_text); //Stop all instances until called
-

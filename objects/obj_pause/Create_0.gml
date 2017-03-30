@@ -1,4 +1,4 @@
-//Depth
+//Deph
 depth = -10000;
 
 //Unpause Variable
@@ -26,3 +26,5 @@ scr_pause_graphics("FULLSCREEN",2,cam_x+64+(cam_w/4)+96,cam_y+192,1); //Change l
 scr_pause_graphics("DEV MODE",2,cam_x+64+(cam_w/4)+96,cam_y+320,2); //Change last param for new additions
 scr_pause_graphics("BACK",2,cam_x+64+(cam_w/4)+96,cam_y+448,3); //Change last param for new additions
 instance_deactivate_object(obj_pause_graphics_text); //Stop all instances until called
+
+pause_surface = surface_create(1280,720);

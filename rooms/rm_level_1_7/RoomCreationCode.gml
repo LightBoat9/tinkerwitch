@@ -38,3 +38,6 @@ if instance_exists(obj_bot) {
 	obj_bot.x = obj_player.x;
 	obj_bot.y = obj_player.y;
 }
+
+//Deactivate port
+port_1_7_enter.active = false;

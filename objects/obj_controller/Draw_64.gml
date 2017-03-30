@@ -29,7 +29,6 @@ draw_sprite(spr_charge_num,floor(global.charge/100),view_width-111,16);
 draw_sprite(spr_charge_num,floor(global.charge/10),view_width-78,16);
 draw_sprite(spr_charge_num,global.charge%10,view_width-45,16);
 
-
 /* Item Bar */
 draw_sprite(spr_item_bar,global.item_bar,view_width/2,view_height);
 

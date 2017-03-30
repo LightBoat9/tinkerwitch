@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "21de8878-0fab-4b45-a990-e20bddbbf5ed",
+            "Value": {
+                "id": "83cb57c9-bc98-4bae-be78-7f0808c0f270",
+                "resourcePath": "rooms\\rm_load\\rm_load.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "21f219ef-bbf2-4acd-bf1a-d4eeda4639bd",
             "Value": {
                 "id": "658babd2-ae68-4490-9afa-052b73610cf4",
@@ -499,6 +507,14 @@
             "Value": {
                 "id": "7c2878ae-d03f-47db-acb9-d2e9d98f5c3a",
                 "resourcePath": "sprites\\spr_item_bot\\spr_item_bot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2e71e888-01da-4a2e-83d6-1fede653b031",
+            "Value": {
+                "id": "7d48f2a9-b5ae-4219-8df5-9270129a651d",
+                "resourcePath": "sprites\\spr_wall_saw_wall\\spr_wall_saw_wall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1527,6 +1543,14 @@
             }
         },
         {
+            "Key": "93a44019-cf28-4ec0-b238-74e1f80d145d",
+            "Value": {
+                "id": "9c095ff7-aa76-41cf-8729-36bcd6246971",
+                "resourcePath": "objects\\obj_wall_saw_saw\\obj_wall_saw_saw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "94d34ab3-1511-479e-ac8f-779adc1c4f07",
             "Value": {
                 "id": "d34ad81c-7fc5-4cbb-b0f4-340257c2d6ec",
@@ -1932,6 +1956,14 @@
                 "id": "268a6cd7-5cbe-4fb3-9474-33bf568c9e92",
                 "resourcePath": "views\\ba871353-be61-4c97-97b3-79324e69d5a6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "baae5948-f31c-4e79-9a2c-2aecb914a980",
+            "Value": {
+                "id": "f1025702-f101-47ad-81dd-927adb1f2fbf",
+                "resourcePath": "objects\\obj_wall_saw_wall\\obj_wall_saw_wall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2492,6 +2524,14 @@
                 "id": "e1906519-38ef-4efb-b14c-7ce9b38ef410",
                 "resourcePath": "scripts\\scr_animate_until\\scr_animate_until.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f074578b-fbbd-4d43-93ae-b3e9cde114e9",
+            "Value": {
+                "id": "9e92680e-4dd4-4410-b36e-5caa284c7427",
+                "resourcePath": "sprites\\spr_wall_saw_saw\\spr_wall_saw_saw.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

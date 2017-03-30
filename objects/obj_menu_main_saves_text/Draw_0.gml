@@ -1,5 +1,7 @@
 if destroy { exit; }
 
+surface_set_target(obj_menu_main.main_surface);
+
 //Camera Dimentions
 var cam_w = camera_get_view_width(view_get_camera(view_current));
 
@@ -58,3 +60,5 @@ draw_text_ext(
 	font_size+(font_size/2),
 	maxlength
 );
+
+surface_reset_target();

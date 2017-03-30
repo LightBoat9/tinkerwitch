@@ -1,3 +1,5 @@
+surface_set_target(pause_surface);
+
 //Camera Positions & Dimentions
 var cam_x = camera_get_view_x(view_get_camera(view_current));
 var cam_y = camera_get_view_y(view_get_camera(view_current));
@@ -18,3 +20,5 @@ draw_rectangle(cam_x+64+(cam_w/4)+64,cam_y+32,cam_x+64+(cam_w/4)+68,cam_y+cam_h-
 
 //Reset Alpha
 draw_set_alpha(1);
+
+surface_reset_target();
