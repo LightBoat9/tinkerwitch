@@ -1,6 +1,6 @@
 if (state = "left") {
 	hsp = 6;
-	if (x >= obj_wall_saw_wall.x + obj_wall_saw_wall.sprite_width-32) {
+	if (x >= wall.x + wall.sprite_width-32) {
 		state = "right";
 		damage = true;
 		hsp = 0;
@@ -8,7 +8,7 @@ if (state = "left") {
 }
 else if (state = "right") {
 	hsp = -6;
-	if (x <= obj_wall_saw_wall.x) {
+	if (x <= wall.x) {
 		state = "left";
 		damage = true;
 		hsp = 0;
